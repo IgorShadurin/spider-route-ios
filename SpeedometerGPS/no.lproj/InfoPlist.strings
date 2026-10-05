@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute bruker posisjonen din for å vise hastigheten din og registrere turen din, også mens du bruker andre apper.";
+"NSMotionUsageDescription" = "SpiderRoute bruker bevegelses- og treningsaktivitet for å legge til aktivitetskontekst i de registrerte turene dine.";
+"NSCameraUsageDescription" = "SpiderRoute bruker kameraet til å ta opp video når du starter opptak fra den sammenkoblede telefonen din.";
+"NSMicrophoneUsageDescription" = "SpiderRoute tar opp lyd med videoene dine bare når lydopptak er aktivert.";
+"NSLocalNetworkUsageDescription" = "SpiderRoute kobler de to telefonene dine lokalt for å styre videoopptak uten internett.";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute legger til innspilte videoer i bildebiblioteket ditt og beholder en kopi i appen.";

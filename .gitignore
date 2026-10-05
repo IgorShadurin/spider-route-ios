@@ -1,0 +1,53 @@
+# Private/local development and generated deliveries
+/artifacts/
+/AppStore/
+/tmp/
+/tools/
+/TestData/
+/docs/
+/Config/MinimalisticValidation.json
+/scripts/*
+!/scripts/i18n-check.sh
+!/scripts/localization_script_guard.py
+!/scripts/build-offline-region-catalog.py
+!/scripts/build-simulator.sh
+
+# Build output and user-specific Xcode state
+.DS_Store
+.build/
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+*.xcresult
+*.xcarchive
+*.ipa
+*.dSYM/
+__pycache__/
+*.pyc
+*.log
+
+# Credentials and provisioning
+.env
+.env.*
+!.env.example
+.private/
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.cer
+*.mobileprovision
+*.keychain*
+AuthKey_*
+
+# Local media, telemetry, personal tracks and databases
+*.mp4
+*.mov
+*.blend
+*.blend1
+*.gpx
+*.kml
+*.sqlite*
+*.db

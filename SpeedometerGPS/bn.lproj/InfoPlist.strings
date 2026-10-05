@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute আপনার অবস্থান ব্যবহার করে গতি দেখায় এবং রাইড রেকর্ড করে, অন্য অ্যাপ ব্যবহার করার সময়ও।";
+"NSMotionUsageDescription" = "SpiderRoute আপনার রেকর্ড করা রাইডে কার্যকলাপের প্রেক্ষিত যোগ করতে মোশন ও ফিটনেস কার্যকলাপ ব্যবহার করে।";
+"NSCameraUsageDescription" = "জোড়া লাগানো ফোন থেকে রেকর্ডিং শুরু করলে SpiderRoute ভিডিও রেকর্ড করতে ক্যামেরা ব্যবহার করে।";
+"NSMicrophoneUsageDescription" = "শব্দ রেকর্ডিং চালু থাকলেই SpiderRoute শুধু আপনার ভিডিওর সঙ্গে শব্দ রেকর্ড করে।";
+"NSLocalNetworkUsageDescription" = "ইন্টারনেট ছাড়াই ভিডিও রেকর্ডিং নিয়ন্ত্রণ করতে SpiderRoute স্থানীয়ভাবে আপনার দুটি ফোন সংযুক্ত করে।";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute রেকর্ড করা ভিডিও আপনার ফটো লাইব্রেরিতে যোগ করে এবং অ্যাপে একটি কপি রাখে।";

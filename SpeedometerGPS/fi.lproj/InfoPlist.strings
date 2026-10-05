@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute käyttää sijaintiasi näyttääkseen nopeutesi ja tallentaakseen ajosi, myös käyttäessäsi muita appeja.";
+"NSMotionUsageDescription" = "SpiderRoute käyttää liike- ja kuntoilutietoja lisätäkseen aktiivisuuskontekstia tallennettuihin ajoihisi.";
+"NSCameraUsageDescription" = "SpiderRoute käyttää kameraa videoiden tallentamiseen, kun aloitat tallennuksen pariliitetyllä puhelimellasi.";
+"NSMicrophoneUsageDescription" = "SpiderRoute tallentaa äänen videoihisi vain, kun äänen tallennus on käytössä.";
+"NSLocalNetworkUsageDescription" = "SpiderRoute yhdistää kaksi puhelintasi paikallisesti videoiden tallennuksen ohjaamiseksi ilman internetyhteyttä.";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute lisää tallennetut videot kuvakirjastoosi ja säilyttää kopion apissa.";

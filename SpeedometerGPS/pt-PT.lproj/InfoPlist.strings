@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "O SpiderRoute usa a tua localização para mostrar a tua velocidade e registar a tua volta, incluindo enquanto usas outras apps.";
+"NSMotionUsageDescription" = "O SpiderRoute usa dados de movimento e atividade física para adicionar contexto de atividade às tuas voltas registadas.";
+"NSCameraUsageDescription" = "O SpiderRoute usa a câmara para gravar vídeo quando inicias a gravação a partir do teu telefone emparelhado.";
+"NSMicrophoneUsageDescription" = "O SpiderRoute grava som nos teus vídeos apenas quando a gravação de som está ativada.";
+"NSLocalNetworkUsageDescription" = "O SpiderRoute liga localmente os teus dois telefones para controlar a gravação de vídeo sem Internet.";
+"NSPhotoLibraryAddUsageDescription" = "O SpiderRoute adiciona os vídeos gravados à tua fototeca e guarda uma cópia na app.";

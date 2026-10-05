@@ -1,0 +1,103 @@
+name: SpeedometerGPS
+options:
+  bundleIdPrefix: com.wowcoded
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+    CODE_SIGN_STYLE: Automatic
+packages:
+  MapLibre:
+    url: https://github.com/maplibre/maplibre-gl-native-distribution
+    exactVersion: 6.31.0
+targets:
+  SpeedometerGPS:
+    type: application
+    platform: iOS
+    sources:
+      - path: SpeedometerGPS
+        excludes:
+          - OfflineRegions
+      - path: SpeedometerGPS/OfflineRegions
+        type: folder
+        buildPhase: resources
+      - path: Config/PrivacyInfo.xcprivacy
+        buildPhase: resources
+    dependencies:
+      - package: MapLibre
+    entitlements:
+      path: Config/SpeedometerGPS.entitlements
+      properties:
+        com.apple.developer.icloud-container-identifiers:
+          - iCloud.com.wowcoded.speedometergps
+        com.apple.developer.ubiquity-container-identifiers:
+          - iCloud.com.wowcoded.speedometergps
+        com.apple.developer.icloud-services:
+          - CloudDocuments
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.wowcoded.speedometergps
+        PRODUCT_NAME: SpeedometerGPS
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_FILE: Config/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        CURRENT_PROJECT_VERSION: "8"
+        MARKETING_VERSION: "1.5"
+        SWIFT_EMIT_LOC_STRINGS: YES
+      configs:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+    preBuildScripts:
+      - name: Validate localization tables
+        script: '"${SRCROOT}/scripts/i18n-check.sh"'
+        basedOnDependencyAnalysis: false
+    scheme:
+      testTargets:
+        - SpeedometerGPSTests
+        - SpeedometerGPSUITests
+      storeKitConfiguration: Config/Configuration.storekit
+  SpeedometerGPSTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SpeedometerGPSTests
+      - path: Config/Configuration.storekit
+        buildPhase: resources
+    dependencies:
+      - target: SpeedometerGPS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.wowcoded.speedometergps.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/SpeedometerGPS.app/SpeedometerGPS"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  SpeedometerGPSUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: SpeedometerGPSUITests
+    dependencies:
+      - target: SpeedometerGPS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.wowcoded.speedometergps.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: SpeedometerGPS
+schemes:
+  SpeedometerGPS:
+    build:
+      targets:
+        SpeedometerGPS: all
+        SpeedometerGPSTests: test
+        SpeedometerGPSUITests: test
+    run:
+      config: Debug
+      storeKitConfiguration: Config/Configuration.storekit

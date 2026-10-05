@@ -1,0 +1,10 @@
+
+// Remote Camera
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute uses your location to show your speed and record your ride, including while you use other apps.";
+"NSMotionUsageDescription" = "SpiderRoute uses motion and fitness activity to add activity context to your recorded rides.";
+"NSCameraUsageDescription" = "SpiderRoute uses the camera to record video when you start recording from your paired phone.";
+"NSMicrophoneUsageDescription" = "SpiderRoute records sound with your videos only when sound recording is enabled.";
+"NSLocalNetworkUsageDescription" = "SpiderRoute connects your two phones locally to control video recording without internet.";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute adds recorded videos to your photo library and keeps a copy in the app.";

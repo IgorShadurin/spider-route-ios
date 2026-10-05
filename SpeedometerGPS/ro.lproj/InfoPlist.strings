@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute folosește locația ta pentru a-ți afișa viteza și a înregistra tura, inclusiv când folosești alte aplicații.";
+"NSMotionUsageDescription" = "SpiderRoute folosește datele de mișcare și activitate fizică pentru a adăuga context de activitate turelor tale înregistrate.";
+"NSCameraUsageDescription" = "SpiderRoute folosește camera pentru a înregistra videoclipuri când începi înregistrarea de pe telefonul asociat.";
+"NSMicrophoneUsageDescription" = "SpiderRoute înregistrează sunetul cu videoclipurile tale numai când înregistrarea sunetului este activată.";
+"NSLocalNetworkUsageDescription" = "SpiderRoute conectează local cele două telefoane pentru a controla înregistrarea video fără internet.";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute adaugă videoclipurile înregistrate în biblioteca ta foto și păstrează o copie în aplicație.";

@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute sử dụng vị trí của bạn để hiển thị tốc độ và ghi lại chuyến đi, kể cả khi bạn dùng ứng dụng khác.";
+"NSMotionUsageDescription" = "SpiderRoute sử dụng dữ liệu chuyển động và hoạt động thể chất để bổ sung ngữ cảnh hoạt động cho các chuyến đi đã ghi lại.";
+"NSCameraUsageDescription" = "SpiderRoute sử dụng camera để quay video khi bạn bắt đầu ghi hình từ điện thoại đã ghép đôi.";
+"NSMicrophoneUsageDescription" = "SpiderRoute chỉ ghi âm cùng video khi bật ghi âm.";
+"NSLocalNetworkUsageDescription" = "SpiderRoute kết nối cục bộ hai điện thoại của bạn để điều khiển việc quay video mà không cần internet.";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute thêm video đã ghi vào thư viện ảnh của bạn và lưu một bản sao trong ứng dụng.";

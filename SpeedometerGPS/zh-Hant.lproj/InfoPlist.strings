@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute 會使用您的位置來顯示速度並記錄騎乘，即使您正在使用其他 App 也會如此。";
+"NSMotionUsageDescription" = "SpiderRoute 會使用動作與健身活動資料，為您記錄的騎乘提供活動背景資訊。";
+"NSCameraUsageDescription" = "當您從已配對的手機開始記錄時，SpiderRoute 會使用相機錄製影片。";
+"NSMicrophoneUsageDescription" = "僅在啟用聲音錄製時，SpiderRoute 才會隨影片錄製聲音。";
+"NSLocalNetworkUsageDescription" = "SpiderRoute 會在本機連接您的兩支手機，無需網路即可控制影片錄製。";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute 會將錄製的影片加入您的照片圖庫，並在 App 中保留副本。";

@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "A SpiderRoute a helyzetedet használja a sebességed megjelenítéséhez és az utad rögzítéséhez, akkor is, amikor más appokat használsz.";
+"NSMotionUsageDescription" = "A SpiderRoute mozgás- és fitnesztevékenységi adatokat használ, hogy tevékenységi kontextust adjon a rögzített utakhoz.";
+"NSCameraUsageDescription" = "A SpiderRoute a kamerát videó rögzítésére használja, amikor a párosított telefonodról indítod a felvételt.";
+"NSMicrophoneUsageDescription" = "A SpiderRoute csak akkor rögzít hangot a videóidhoz, ha a hangrögzítés engedélyezve van.";
+"NSLocalNetworkUsageDescription" = "A SpiderRoute helyben kapcsolja össze a két telefonodat, hogy internet nélkül vezérelhesd a videófelvételt.";
+"NSPhotoLibraryAddUsageDescription" = "A SpiderRoute hozzáadja a rögzített videókat a fotókönyvtáradhoz, és egy példányt az appban is megőriz.";

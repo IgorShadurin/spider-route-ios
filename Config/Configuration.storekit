@@ -1,0 +1,77 @@
+{
+  "identifier": "F1900001-7A32-4DF2-B490-149D51000001",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "19.99",
+      "familyShareable": false,
+      "internalID": "F1900005-7A32-4DF2-B490-149D51000005",
+      "localizations": [
+        {
+          "description": "Lifetime access to ride recording, ride history, and iCloud sync.",
+          "displayName": "SpiderRoute Plus Lifetime",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.wowcoded.speedometergps.lifetime",
+      "referenceName": "SpiderRoute Plus Lifetime",
+      "type": "NonConsumable"
+    }
+  ],
+  "settings": {
+    "_askToBuyEnabled": false,
+    "_billingGracePeriodEnabled": false,
+    "_billingIssuesEnabled": false,
+    "_disableDialogs": false,
+    "_failTransactionsEnabled": false,
+    "_locale": "en_US",
+    "_renewalBillingIssuesEnabled": false,
+    "_storefront": "USA",
+    "_timeRate": 0
+  },
+  "subscriptionGroups": [
+    {
+      "id": "F1900002-7A32-4DF2-B490-149D51000002",
+      "localizations": [
+        {
+          "description": "Ride recording, ride history, and iCloud sync.",
+          "displayName": "SpiderRoute Plus",
+          "locale": "en_US"
+        }
+      ],
+      "name": "SpiderRoute Plus",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "9.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "F1900003-7A32-4DF2-B490-149D51000003",
+          "introductoryOffer": {
+            "displayPrice": "0",
+            "internalID": "F1900004-7A32-4DF2-B490-149D51000004",
+            "paymentMode": "free",
+            "subscriptionPeriod": "P3D"
+          },
+          "localizations": [
+            {
+              "description": "Ride recording, ride history, and iCloud sync.",
+              "displayName": "SpiderRoute Plus",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.wowcoded.speedometergps.plus.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "SpiderRoute Plus Yearly",
+          "subscriptionGroupID": "F1900002-7A32-4DF2-B490-149D51000002",
+          "type": "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

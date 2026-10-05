@@ -1,0 +1,1232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB05AA000000000000000001 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05AA000000000000000002 /* HUDView.swift */; };
+		0167ED8BB983DB0AECB263AC /* SpeedometerGPSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E921DF8F4D8ED9FDD345D1 /* SpeedometerGPSApp.swift */; };
+		0544C8823E6C610D88EC54AB /* RemoteCameraPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5861798DB0165FB01747885 /* RemoteCameraPhotosTests.swift */; };
+		0A64804AC53B44316BA79103 /* MainShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316F1CFC720D63ECE24EBEE /* MainShellView.swift */; };
+		0FFB31DE66AC4208D6EDB631 /* SpeedAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5B20DEDE9B6A02A5C1C01 /* SpeedAlert.swift */; };
+		10B296ED3057C8C47BE14A36 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C436DF767AB3E70D1FEC49 /* TripsView.swift */; };
+		13D5B966EFCE3B8DB7EE7A05 /* WelcomeStoryTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479DAEFADD34CF2B68D8FC4F /* WelcomeStoryTiming.swift */; };
+		14658561BC95E72ABB59D13D /* ActiveTripPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89976DDFB2D89274F0A76F /* ActiveTripPersistence.swift */; };
+		1A1BA78D5B3B87A1B21FBADE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBDCC47A6E2769C4D14639 /* SettingsView.swift */; };
+		27866EF144F4385435801D3F /* RemoteCameraLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80DA989224A18AC107E09D /* RemoteCameraLink.swift */; };
+		29934B72999AB32E91FF6641 /* RemoteCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA613E3974A93FC2D4D104 /* RemoteCameraTests.swift */; };
+		33BA2E64A516EA5E8D8EA5A4 /* SpeedometerGPSCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2318D310E31914A4353A3 /* SpeedometerGPSCoreTests.swift */; };
+		3A8E4D717CF666CC610FB48E /* PlatformCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF7986C1B7CA6F11B56D18 /* PlatformCompatibility.swift */; };
+		3E6E089AB4C170F5CD08F168 /* ReferenceRoutesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A45709F72A68C5630B343 /* ReferenceRoutesSettingsView.swift */; };
+		4019AE0C001C1C26143026EA /* ScreenshotCityFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3894BA32ED72183E6132E647 /* ScreenshotCityFixture.swift */; };
+		40AFFB8EB7BFDB69250FF002 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E58771CD17A0E65605A4EF /* AppSettings.swift */; };
+		4119AA7B2AD9B755DE9F5D15 /* TripVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD7CF8AB5902D09B4D9B3D /* TripVideoTests.swift */; };
+		F3DB7A7A0669F91A2DBD569E /* TripRoutePreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CE4BCE88385D1FBD4D4B8 /* TripRoutePreviewTests.swift */; };
+		418A168D1A3118E3CA6CE75A /* SpeedometerGPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BE1CF6A6281530980CF13B /* SpeedometerGPSUITests.swift */; };
+		493B075D65161690D29C03F9 /* OfflineMapsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263FCBCBF7C67781EEF3FA28 /* OfflineMapsSettingsView.swift */; };
+		4A1E1752C7B0A337863F163C /* RemoteCameraPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03D69CACE9DE1A1810EFF0B /* RemoteCameraPhotos.swift */; };
+		4DB61011FF3D729FFA0A3AB9 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FFC309557ACC4D189724E /* Localization.swift */; };
+		53CF2F086C14A8387A21DC63 /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = A803D660F76FDC76F132905E /* MapLibre */; };
+		5AEC5B33DA5E62B3EE59A824 /* LocationMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF897E1F1DFBDA350966A18 /* LocationMotionService.swift */; };
+		616EE5C3B17B9654D350B08B /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4528212825EFCC67A6A01E7 /* SubscriptionStore.swift */; };
+		6380E66A6060F270F34B1ACF /* SpeedometerGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999C9F1D0159BFC557360F4 /* SpeedometerGauge.swift */; };
+		65A036C6F7D7B1705203AE31 /* RouteExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21697861FA10D5E96B62DB68 /* RouteExporter.swift */; };
+		6AA84D134B02BB01724324BE /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3B189EB1DD920BA6734EE /* AppRootView.swift */; };
+		6BFDEB587A787477B637C772 /* LaunchLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CFC51A01F8B4BEB181C3E6 /* LaunchLoaderView.swift */; };
+		70F9194C5C625D7D86E6335B /* RouteGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898BED1C72234274F9ECAC0 /* RouteGuide.swift */; };
+		7213B0FFEB2368A78FBF4D77 /* RemoteCameraSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F2D486DAADA545F066126 /* RemoteCameraSounds.swift */; };
+		7710B1B765665889D8EF7801 /* RemoteCameraExternalInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71DD5BD63BCF5EBE9B0E6BA /* RemoteCameraExternalInput.swift */; };
+		7919652967A9042FD2A97D88 /* RemoteCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF51C6E600F001882736971 /* RemoteCameraController.swift */; };
+		81238C5B37E45DF995549A1C /* TripRecoveryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905DBD5E8AB786A66CBAC7D /* TripRecoveryModal.swift */; };
+		8819C920A02470A23173F514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFE32D57381D046F768858 /* Assets.xcassets */; };
+		8839142C8F2C4392A20BA4E8 /* DestructiveConfirmationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026418FD86F6201240758A4 /* DestructiveConfirmationModal.swift */; };
+		8878066585FB17E0D01C0DF6 /* WelcomeFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B648A761977F68FD95053C /* WelcomeFlowView.swift */; };
+		8FD799CF90BA81130EAA233D /* RemoteCameraProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784EB546B80D7AD9E555AFC /* RemoteCameraProtocol.swift */; };
+		9247B9D70B655C66797E1398 /* SpeedDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203EBD08EE3924E219F7478 /* SpeedDashboardView.swift */; };
+		947223C1B8744E8123A79242 /* TrackPointStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D4EAE4E187E913A4C86DE /* TrackPointStorage.swift */; };
+		962FAB5E172366087C451001 /* RemoteCameraExternalInputViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A1613B453917B9C22C4A38 /* RemoteCameraExternalInputViews.swift */; };
+		9BDB18901521F733984ED354 /* AppAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77608E77357B077E70BE214 /* AppAudioSession.swift */; };
+		9D6B36D42A6A35B0CE18CCCC /* RouteArchiveStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704C411405F1754CCA910EE3 /* RouteArchiveStore.swift */; };
+		9DABF0A1FD58CC787604E03E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D73D81CC2D538F8A030EA3A8 /* PrivacyInfo.xcprivacy */; };
+		A3C5B5F8C57391E7DD6E73A0 /* SpeedUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BD9FBCBB104CEBF1B54C86 /* SpeedUnits.swift */; };
+		A5F10C05AD81EAD6DC86EB52 /* RemoteCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6C14A66D41CF122C9653C /* RemoteCameraUITests.swift */; };
+		A845FDBEB26D98EA4DA26E84 /* TripVideoRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07262D1016DB5FEEDBB0FE5B /* TripVideoRecording.swift */; };
+		A85A03DA9318CCC56634BB57 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D74AB5A3335B2776C064DB /* Controls.swift */; };
+		A9A158677DAE93AE8C8D6590 /* MapLibreNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18A153458CD5B442369708F5 /* MapLibreNotices.txt */; };
+		ABF397507B1AB8AA8B1CE976 /* RemoteCameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA3135D6DC722C8A0C02034 /* RemoteCameraCapture.swift */; };
+		B27B22BBE95CEBC5017F6536 /* ScreenshotStateCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883572EAC24EDFA3DC517F03 /* ScreenshotStateCatalog.swift */; };
+		B79287F30BFC58E4E09FB807 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF868E5053D93C8AFC5BF2F /* TripDetailView.swift */; };
+		B7E15E4FD3B3BC7A75B81797 /* RemoteCameraViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB217D1E8693B69324FF3D2 /* RemoteCameraViews.swift */; };
+		C0F433BF492F3C5B230A95C6 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98C66D4FB1BFFB55A11468 /* AppTheme.swift */; };
+		C1081EAB2CF78E1E993E6285 /* RouteGuideViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19520A7A890B71C84CE7A463 /* RouteGuideViews.swift */; };
+		C6195D9E4806E81E82AC80C8 /* RouteGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FF3928039B83BE0BF96B6 /* RouteGuideTests.swift */; };
+		C6D581FFF702A2EFBCB6E6C9 /* ActiveTripPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C38FCF95D09A83B78429A /* ActiveTripPersistenceTests.swift */; };
+		C8EFF74B0BAFB65F852CF346 /* OSMMapResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15959379578334ADC0EB6689 /* OSMMapResources.swift */; };
+		D38BBA18BA2BDCBB287A6EA3 /* ReferenceRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B72BE4A56974036EF82FF2 /* ReferenceRoute.swift */; };
+		DBECBE7BBF0F969FDF66696D /* LongRecordingProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9EF55339A80546220FDC4 /* LongRecordingProbe.swift */; };
+		DC853DAD44BA8A40CD41D215 /* ReferenceRouteXMLParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15653DCCBF272F62D8917A2B /* ReferenceRouteXMLParsers.swift */; };
+		DF6BEE10992B8B067A043FA3 /* WelcomePresentationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B63F3E15D7C69F4A8B69E /* WelcomePresentationStore.swift */; };
+		E0C1C14B61FFB5241542FBD0 /* TripRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED76E87F34069E2B4B9CDD5 /* TripRecorder.swift */; };
+		E580274AB99E5E220580E7A5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8748B20EDD942948196C2 /* Models.swift */; };
+		7292F8496E7784ADD3517951 /* TripRoutePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F2F7A8A16CD033C67EA58 /* TripRoutePreview.swift */; };
+		E8B4548F88B72859D6D921C6 /* OSMLiberty.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C24D9D8D231DD3ABC8223AB /* OSMLiberty.json */; };
+		F19EF936535105D99BC494BD /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F21DF121909D74A116529ECF /* Configuration.storekit */; };
+		F3A56A1D35801B8CDED1FF54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C48E7ACE89AB75CF63BFC2 /* Localizable.strings */; };
+		F472432C217F9C64F9390AF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF8CA7CA90B85352C1FC7848 /* InfoPlist.strings */; };
+		F962CD63C4A6753A3B3EA8B9 /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4446B9B705EB7C159CF2E77 /* RouteMapView.swift */; };
+		FB884A5A860C537D201B0508 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3672B8CA253149333289D4A0 /* PaywallView.swift */; };
+		6776A4ACC9B1E81E288A8C65 /* OfflineRegionCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF8780DE8FAE77E9031AA8 /* OfflineRegionCatalog.swift */; };
+		4EFF288335CA9319E569D64B /* OfflineRegionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6186EEFAEDB75ABAF1B0BB62 /* OfflineRegionPickerView.swift */; };
+		6431F3D4DB32FFA80298DDE4 /* OfflineRegions in Resources */ = {isa = PBXBuildFile; fileRef = 738564A3B879CD779C39AD1D /* OfflineRegions */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACE13AA1279B0250B7C4CE01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE83199A1A7E4B218C984B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA497DF2608D7387C9FD9977;
+			remoteInfo = SpeedometerGPS;
+		};
+		B2A2FB0614A9415E80467FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE83199A1A7E4B218C984B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA497DF2608D7387C9FD9977;
+			remoteInfo = SpeedometerGPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB05AA000000000000000002 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		0017459D5AAB01FBFA1FBD65 /* ml */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ml; path = ml.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01AF277A62455DAECDFDE509 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01B09A81B578E8000227A9AA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		034D0320F0ED6B71AD895CF8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03BE1CF6A6281530980CF13B /* SpeedometerGPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerGPSUITests.swift; sourceTree = "<group>"; };
+		07262D1016DB5FEEDBB0FE5B /* TripVideoRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripVideoRecording.swift; sourceTree = "<group>"; };
+		0A72FFD9EAC1E751814A03AB /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B59AC1FFB64633CD996AD68 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		0BF868E5053D93C8AFC5BF2F /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		0D3D5C0A8C78DC31197A0985 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1162B921390B37C1923296AE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1166A065A559B3407278AA1E /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		15653DCCBF272F62D8917A2B /* ReferenceRouteXMLParsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceRouteXMLParsers.swift; sourceTree = "<group>"; };
+		15959379578334ADC0EB6689 /* OSMMapResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSMMapResources.swift; sourceTree = "<group>"; };
+		16CA701817DCC1968FEC7A8D /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17BF6605B52AF2FA9B08D00C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		17FEDF978F2AE69B18FB6C1B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		18A153458CD5B442369708F5 /* MapLibreNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MapLibreNotices.txt; sourceTree = "<group>"; };
+		19520A7A890B71C84CE7A463 /* RouteGuideViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGuideViews.swift; sourceTree = "<group>"; };
+		19A1D0E3DD1AE6462FA65346 /* bn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bn; path = bn.lproj/Localizable.strings; sourceTree = "<group>"; };
+		19FA842ED40216F10DE3FC6B /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AA3135D6DC722C8A0C02034 /* RemoteCameraCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraCapture.swift; sourceTree = "<group>"; };
+		1EBFE32D57381D046F768858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21697861FA10D5E96B62DB68 /* RouteExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteExporter.swift; sourceTree = "<group>"; };
+		24154EFF6503A0802BD5DBCA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		263FCBCBF7C67781EEF3FA28 /* OfflineMapsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineMapsSettingsView.swift; sourceTree = "<group>"; };
+		2740F1662F6D961782672F1D /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27C563F03912EC8D8456A016 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		287DC2646B98947192CEBED9 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		28A68B70703C71ABE0949D2F /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2AA83897BB60B849762410F4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2AF9EF55339A80546220FDC4 /* LongRecordingProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRecordingProbe.swift; sourceTree = "<group>"; };
+		2E1963A74BFACFE67A1AAF17 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2EF51C6E600F001882736971 /* RemoteCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraController.swift; sourceTree = "<group>"; };
+		31CFC51A01F8B4BEB181C3E6 /* LaunchLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchLoaderView.swift; sourceTree = "<group>"; };
+		3303E60555EF3903E8C31A18 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		357D3C5FFC13707A36C930A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35B72BE4A56974036EF82FF2 /* ReferenceRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceRoute.swift; sourceTree = "<group>"; };
+		3672B8CA253149333289D4A0 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		36A1613B453917B9C22C4A38 /* RemoteCameraExternalInputViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraExternalInputViews.swift; sourceTree = "<group>"; };
+		37197207DC0F408FB3EB91BB /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3894BA32ED72183E6132E647 /* ScreenshotCityFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCityFixture.swift; sourceTree = "<group>"; };
+		39A503A42331FC00CFE828C1 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B195FB511CECBC09018325F /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C24D9D8D231DD3ABC8223AB /* OSMLiberty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OSMLiberty.json; sourceTree = "<group>"; };
+		3CAEC0AF911BE012C83A9796 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4203EBD08EE3924E219F7478 /* SpeedDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedDashboardView.swift; sourceTree = "<group>"; };
+		44D65A8B217E7E43586DB333 /* en-AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-AU"; path = "en-AU.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		44E3B189EB1DD920BA6734EE /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		451FB1BC0E249ADD83139715 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		479DAEFADD34CF2B68D8FC4F /* WelcomeStoryTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeStoryTiming.swift; sourceTree = "<group>"; };
+		4A74C8BA102179C92608A8F0 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C89976DDFB2D89274F0A76F /* ActiveTripPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTripPersistence.swift; sourceTree = "<group>"; };
+		4D70F1488158E0BBC2003DEB /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4DB0A3C2B1E1A022D39C4AA6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4E5DE4F31788F2865BB87658 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FF07FCA3A93BEED8B33C9D5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		513C24E4CC36E3609F5FB9FD /* en-AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-AU"; path = "en-AU.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		51E1CC1D6BBE97657D992579 /* pa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pa; path = pa.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52E5B20DEDE9B6A02A5C1C01 /* SpeedAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedAlert.swift; sourceTree = "<group>"; };
+		559BBC5F1AA7CE30BDA1A3A1 /* en-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-CA"; path = "en-CA.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		585D0D906A419314F278534A /* or */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = or; path = or.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A25C38C74F3BE202915F36D /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B80DA989224A18AC107E09D /* RemoteCameraLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraLink.swift; sourceTree = "<group>"; };
+		5BCBE8F28624AA2CEDB8CAA5 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5C1F6A2336942FB1EF0E4118 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5EFBCC812076665192215122 /* kn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kn; path = kn.lproj/Localizable.strings; sourceTree = "<group>"; };
+		61D74AB5A3335B2776C064DB /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
+		67BD9FBCBB104CEBF1B54C86 /* SpeedUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedUnits.swift; sourceTree = "<group>"; };
+		6A3C38FCF95D09A83B78429A /* ActiveTripPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTripPersistenceTests.swift; sourceTree = "<group>"; };
+		6CC8DD8A118FE1489B686BF5 /* kn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kn; path = kn.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E84B883502A7DE72B387C3F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6F66D65040DE1E8709FF6FB0 /* SpeedometerGPSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpeedometerGPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		704C411405F1754CCA910EE3 /* RouteArchiveStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteArchiveStore.swift; sourceTree = "<group>"; };
+		72E58771CD17A0E65605A4EF /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		7316F1CFC720D63ECE24EBEE /* MainShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainShellView.swift; sourceTree = "<group>"; };
+		74244B69D81DB7A7D794B355 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7499C24B6B16DDDAAAE9F0A7 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76C2637410A1175381947F21 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		7A01B8904306D3DC9A906C73 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		7CCDB30013CB4C0D445F32C5 /* SpeedometerGPS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SpeedometerGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDA7AFAAB522A53BEBDB3A0 /* te */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = te; path = te.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80CF7986C1B7CA6F11B56D18 /* PlatformCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformCompatibility.swift; sourceTree = "<group>"; };
+		883572EAC24EDFA3DC517F03 /* ScreenshotStateCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotStateCatalog.swift; sourceTree = "<group>"; };
+		89C436DF767AB3E70D1FEC49 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		8CDF199CFD6B253C24000A54 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D5A38E16305DB956DDF8ECA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D9295A0EC0FCFC555BC43F2 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8FB924250C9600256C717E3D /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90C53417415BAC2821B5BA41 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		92C9AD8AE502781B4AC346AB /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		95213777BCC668F26775A506 /* bn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bn; path = bn.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95F2318D310E31914A4353A3 /* SpeedometerGPSCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerGPSCoreTests.swift; sourceTree = "<group>"; };
+		9756600121FC62FAA555DC1D /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		97CBD5272B803770AF6262A9 /* gu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gu; path = gu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		97E0DB03466959FAACD9F169 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98226C2631F10E161480809B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9898BED1C72234274F9ECAC0 /* RouteGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGuide.swift; sourceTree = "<group>"; };
+		9905DBD5E8AB786A66CBAC7D /* TripRecoveryModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRecoveryModal.swift; sourceTree = "<group>"; };
+		9A4BC99165083075658D21D1 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B3F2D486DAADA545F066126 /* RemoteCameraSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraSounds.swift; sourceTree = "<group>"; };
+		9CBA613E3974A93FC2D4D104 /* RemoteCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraTests.swift; sourceTree = "<group>"; };
+		9E98C66D4FB1BFFB55A11468 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		9EF6C14A66D41CF122C9653C /* RemoteCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraUITests.swift; sourceTree = "<group>"; };
+		A020F90AFA5F8959C19E7BD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0B1BD7471C06B62098042D4 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A30FF3928039B83BE0BF96B6 /* RouteGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGuideTests.swift; sourceTree = "<group>"; };
+		A4446B9B705EB7C159CF2E77 /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
+		A65FFC309557ACC4D189724E /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		AAEB88233F5032F445EB3515 /* ta */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ta; path = ta.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABA0FEE5166841D9247F2F3E /* en-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-CA"; path = "en-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		ACB22AB1F7E09A0C68E54B6E /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ACD2BACC9A7E547632FD98A1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADF897E1F1DFBDA350966A18 /* LocationMotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMotionService.swift; sourceTree = "<group>"; };
+		AE992F77317B63FDE3A09CB2 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B3AA53DEBAA5C4FF52503743 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3CA7B9D2E59B8AAAD712A83 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B4A0EF8A76B63AFED03D8681 /* ml */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ml; path = ml.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B63A1C3411FE6B66892DB4C8 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6DB7E5537F7BF5B9D8C43B4 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B77608E77357B077E70BE214 /* AppAudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAudioSession.swift; sourceTree = "<group>"; };
+		B8BF8357CC0584B8E9871129 /* ta */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ta; path = ta.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA243930F350BABD1F8E09D6 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB4C045C2DEFCCCC4C451E26 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BBBC57BFC56769480A27718B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBC99486980EE24C7B3C423E /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC0A45709F72A68C5630B343 /* ReferenceRoutesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceRoutesSettingsView.swift; sourceTree = "<group>"; };
+		BDB217D1E8693B69324FF3D2 /* RemoteCameraViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraViews.swift; sourceTree = "<group>"; };
+		BDB2E918244CF6775CF4F8CF /* mr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mr; path = mr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEF237A47EC6FA1F42DAD3C4 /* pa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pa; path = pa.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C026418FD86F6201240758A4 /* DestructiveConfirmationModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestructiveConfirmationModal.swift; sourceTree = "<group>"; };
+		C03D69CACE9DE1A1810EFF0B /* RemoteCameraPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraPhotos.swift; sourceTree = "<group>"; };
+		C2FCB4FBB42F389EAFACA8A6 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C41E519684D5F698FDAB6820 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C44FFF415C9AD2CF3FE7BCAF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C6A8748B20EDD942948196C2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		085F2F7A8A16CD033C67EA58 /* TripRoutePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRoutePreview.swift; sourceTree = "<group>"; };
+		C784EB546B80D7AD9E555AFC /* RemoteCameraProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraProtocol.swift; sourceTree = "<group>"; };
+		CA4B875097C9D80191D7D5A6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CC8CE5B469A3F287C3223BEF /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD8D4EAE4E187E913A4C86DE /* TrackPointStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPointStorage.swift; sourceTree = "<group>"; };
+		D0781D58C13755F8C7656CF5 /* SpeedometerGPSUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpeedometerGPSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B08AE08E078F8FE4AD5B5D /* te */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = te; path = te.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D1BD7CF8AB5902D09B4D9B3D /* TripVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripVideoTests.swift; sourceTree = "<group>"; };
+		350CE4BCE88385D1FBD4D4B8 /* TripRoutePreviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRoutePreviewTests.swift; sourceTree = "<group>"; };
+		D1D8ED0A6CCC55E0A7CE555A /* gu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gu; path = gu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D61348C6CB3D8F4573CC1AC7 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D73D81CC2D538F8A030EA3A8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D97B63F3E15D7C69F4A8B69E /* WelcomePresentationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresentationStore.swift; sourceTree = "<group>"; };
+		D999C9F1D0159BFC557360F4 /* SpeedometerGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerGauge.swift; sourceTree = "<group>"; };
+		DA25D05F7454F547326E74C9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA85A33E88CD6CFA82A0C13F /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB3B4EE95EE8B86B46BF25B3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCEA6774CDD4CC2E106CDA29 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DECBAA1025EE39EA1D68482E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DED76E87F34069E2B4B9CDD5 /* TripRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRecorder.swift; sourceTree = "<group>"; };
+		E0E921DF8F4D8ED9FDD345D1 /* SpeedometerGPSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerGPSApp.swift; sourceTree = "<group>"; };
+		E2E544CA733B2BA09E480B14 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E4528212825EFCC67A6A01E7 /* SubscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStore.swift; sourceTree = "<group>"; };
+		E5861798DB0165FB01747885 /* RemoteCameraPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraPhotosTests.swift; sourceTree = "<group>"; };
+		E595E89028FD22CD1C86DD98 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6CCAFB3DA554813DC7369F6 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6FFD665663A941F86AE2D90 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E71DD5BD63BCF5EBE9B0E6BA /* RemoteCameraExternalInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCameraExternalInput.swift; sourceTree = "<group>"; };
+		EC2E17CA55EBACF364354D6D /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ED52009214E9B562A436C0EB /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F03D7FE38C074C66D346E5F5 /* mr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mr; path = mr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F21DF121909D74A116529ECF /* Configuration.storekit */ = {isa = PBXFileReference; path = Configuration.storekit; sourceTree = "<group>"; };
+		F4BFC29FCEC65BD71C4CC613 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6DBDCC47A6E2769C4D14639 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F827E2A29436BDDFB1B146EE /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F8B648A761977F68FD95053C /* WelcomeFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFlowView.swift; sourceTree = "<group>"; };
+		FE8CFF32469A4663F054A8A0 /* or */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = or; path = or.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF3583A7F626CF4172247C39 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7CAF8780DE8FAE77E9031AA8 /* OfflineRegionCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/OfflineRegionCatalog.swift"; sourceTree = "<group>"; };
+		6186EEFAEDB75ABAF1B0BB62 /* OfflineRegionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Settings/OfflineRegionPickerView.swift"; sourceTree = "<group>"; };
+		738564A3B879CD779C39AD1D /* OfflineRegions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "OfflineRegions"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		570D27ECEED980F68EF60FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CF2F086C14A8387A21DC63 /* MapLibre in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C9A295C9E1F9477009F97E5 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				19520A7A890B71C84CE7A463 /* RouteGuideViews.swift */,
+				A4446B9B705EB7C159CF2E77 /* RouteMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		0FF3ADC5EFADFED4E108713D /* RemoteCamera */ = {
+			isa = PBXGroup;
+			children = (
+				1AA3135D6DC722C8A0C02034 /* RemoteCameraCapture.swift */,
+				2EF51C6E600F001882736971 /* RemoteCameraController.swift */,
+				E71DD5BD63BCF5EBE9B0E6BA /* RemoteCameraExternalInput.swift */,
+				36A1613B453917B9C22C4A38 /* RemoteCameraExternalInputViews.swift */,
+				5B80DA989224A18AC107E09D /* RemoteCameraLink.swift */,
+				C03D69CACE9DE1A1810EFF0B /* RemoteCameraPhotos.swift */,
+				C784EB546B80D7AD9E555AFC /* RemoteCameraProtocol.swift */,
+				9B3F2D486DAADA545F066126 /* RemoteCameraSounds.swift */,
+				BDB217D1E8693B69324FF3D2 /* RemoteCameraViews.swift */,
+			);
+			path = RemoteCamera;
+			sourceTree = "<group>";
+		};
+		12E0EFC8164307361B61B18B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A295C9E1F9477009F97E5 /* Map */,
+				7A2F1BA80D666CDA2938EE88 /* Paywall */,
+				0FF3ADC5EFADFED4E108713D /* RemoteCamera */,
+				4F5C348B1BA38E7816A35525 /* Settings */,
+				15D6655F8A67A8EA271A6645 /* Speed */,
+				9E599DCA7518C6F34EB58AAA /* Trips */,
+				B18EFBE85F5859F1DBDB663D /* Welcome */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		15D6655F8A67A8EA271A6645 /* Speed */ = {
+			isa = PBXGroup;
+			children = (
+				AB05AA000000000000000002 /* HUDView.swift */,
+				4203EBD08EE3924E219F7478 /* SpeedDashboardView.swift */,
+				D999C9F1D0159BFC557360F4 /* SpeedometerGauge.swift */,
+			);
+			path = Speed;
+			sourceTree = "<group>";
+		};
+		28F2011F48148C96A17760FC /* SpeedometerGPS */ = {
+			isa = PBXGroup;
+			children = (
+				1EBFE32D57381D046F768858 /* Assets.xcassets */,
+				18A153458CD5B442369708F5 /* MapLibreNotices.txt */,
+				3C24D9D8D231DD3ABC8223AB /* OSMLiberty.json */,
+				738564A3B879CD779C39AD1D /* OfflineRegions */,
+				6186EEFAEDB75ABAF1B0BB62 /* OfflineRegionPickerView.swift */,
+				7CAF8780DE8FAE77E9031AA8 /* OfflineRegionCatalog.swift */,
+				8419BF60E0146C531CBB6754 /* App */,
+				FA34B5A58944A049E28AC4D3 /* Core */,
+				462A392C2D9DEC9819DD3A69 /* Design */,
+				12E0EFC8164307361B61B18B /* Features */,
+				EF8CA7CA90B85352C1FC7848 /* InfoPlist.strings */,
+				90C48E7ACE89AB75CF63BFC2 /* Localizable.strings */,
+			);
+			path = SpeedometerGPS;
+			sourceTree = "<group>";
+		};
+		462A392C2D9DEC9819DD3A69 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				9E98C66D4FB1BFFB55A11468 /* AppTheme.swift */,
+				61D74AB5A3335B2776C064DB /* Controls.swift */,
+				C026418FD86F6201240758A4 /* DestructiveConfirmationModal.swift */,
+				80CF7986C1B7CA6F11B56D18 /* PlatformCompatibility.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		4F5C348B1BA38E7816A35525 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				263FCBCBF7C67781EEF3FA28 /* OfflineMapsSettingsView.swift */,
+				BC0A45709F72A68C5630B343 /* ReferenceRoutesSettingsView.swift */,
+				F6DBDCC47A6E2769C4D14639 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		67FFCFA57FDDE407DF133B4A = {
+			isa = PBXGroup;
+			children = (
+				AA93F2C8EE9D681A4680C9D8 /* Config */,
+				28F2011F48148C96A17760FC /* SpeedometerGPS */,
+				CF12C4D1685C77C92F61459C /* SpeedometerGPSTests */,
+				BB1E6619FD4F6A60BA941082 /* SpeedometerGPSUITests */,
+				C41FD4269C3A1327E8B5D512 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A2F1BA80D666CDA2938EE88 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				3672B8CA253149333289D4A0 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		8419BF60E0146C531CBB6754 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				44E3B189EB1DD920BA6734EE /* AppRootView.swift */,
+				7316F1CFC720D63ECE24EBEE /* MainShellView.swift */,
+				3894BA32ED72183E6132E647 /* ScreenshotCityFixture.swift */,
+				883572EAC24EDFA3DC517F03 /* ScreenshotStateCatalog.swift */,
+				E0E921DF8F4D8ED9FDD345D1 /* SpeedometerGPSApp.swift */,
+				D97B63F3E15D7C69F4A8B69E /* WelcomePresentationStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9E599DCA7518C6F34EB58AAA /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				0BF868E5053D93C8AFC5BF2F /* TripDetailView.swift */,
+				9905DBD5E8AB786A66CBAC7D /* TripRecoveryModal.swift */,
+				89C436DF767AB3E70D1FEC49 /* TripsView.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		AA93F2C8EE9D681A4680C9D8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F21DF121909D74A116529ECF /* Configuration.storekit */,
+				D73D81CC2D538F8A030EA3A8 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B18EFBE85F5859F1DBDB663D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				31CFC51A01F8B4BEB181C3E6 /* LaunchLoaderView.swift */,
+				F8B648A761977F68FD95053C /* WelcomeFlowView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BB1E6619FD4F6A60BA941082 /* SpeedometerGPSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF6C14A66D41CF122C9653C /* RemoteCameraUITests.swift */,
+				03BE1CF6A6281530980CF13B /* SpeedometerGPSUITests.swift */,
+			);
+			path = SpeedometerGPSUITests;
+			sourceTree = "<group>";
+		};
+		C41FD4269C3A1327E8B5D512 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CCDB30013CB4C0D445F32C5 /* SpeedometerGPS.app */,
+				6F66D65040DE1E8709FF6FB0 /* SpeedometerGPSTests.xctest */,
+				D0781D58C13755F8C7656CF5 /* SpeedometerGPSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF12C4D1685C77C92F61459C /* SpeedometerGPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A3C38FCF95D09A83B78429A /* ActiveTripPersistenceTests.swift */,
+				E5861798DB0165FB01747885 /* RemoteCameraPhotosTests.swift */,
+				9CBA613E3974A93FC2D4D104 /* RemoteCameraTests.swift */,
+				A30FF3928039B83BE0BF96B6 /* RouteGuideTests.swift */,
+				95F2318D310E31914A4353A3 /* SpeedometerGPSCoreTests.swift */,
+				D1BD7CF8AB5902D09B4D9B3D /* TripVideoTests.swift */,
+				350CE4BCE88385D1FBD4D4B8 /* TripRoutePreviewTests.swift */,
+			);
+			path = SpeedometerGPSTests;
+			sourceTree = "<group>";
+		};
+		FA34B5A58944A049E28AC4D3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C89976DDFB2D89274F0A76F /* ActiveTripPersistence.swift */,
+				B77608E77357B077E70BE214 /* AppAudioSession.swift */,
+				72E58771CD17A0E65605A4EF /* AppSettings.swift */,
+				A65FFC309557ACC4D189724E /* Localization.swift */,
+				ADF897E1F1DFBDA350966A18 /* LocationMotionService.swift */,
+				2AF9EF55339A80546220FDC4 /* LongRecordingProbe.swift */,
+				C6A8748B20EDD942948196C2 /* Models.swift */,
+				085F2F7A8A16CD033C67EA58 /* TripRoutePreview.swift */,
+				15959379578334ADC0EB6689 /* OSMMapResources.swift */,
+				35B72BE4A56974036EF82FF2 /* ReferenceRoute.swift */,
+				15653DCCBF272F62D8917A2B /* ReferenceRouteXMLParsers.swift */,
+				704C411405F1754CCA910EE3 /* RouteArchiveStore.swift */,
+				21697861FA10D5E96B62DB68 /* RouteExporter.swift */,
+				9898BED1C72234274F9ECAC0 /* RouteGuide.swift */,
+				52E5B20DEDE9B6A02A5C1C01 /* SpeedAlert.swift */,
+				67BD9FBCBB104CEBF1B54C86 /* SpeedUnits.swift */,
+				E4528212825EFCC67A6A01E7 /* SubscriptionStore.swift */,
+				CD8D4EAE4E187E913A4C86DE /* TrackPointStorage.swift */,
+				DED76E87F34069E2B4B9CDD5 /* TripRecorder.swift */,
+				07262D1016DB5FEEDBB0FE5B /* TripVideoRecording.swift */,
+				479DAEFADD34CF2B68D8FC4F /* WelcomeStoryTiming.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BBA5F334366F10EE00C3A75 /* SpeedometerGPSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7C3E69C467F1BCDCA07CD01 /* Build configuration list for PBXNativeTarget "SpeedometerGPSUITests" */;
+			buildPhases = (
+				425B42370BF7B19427CB24AF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9017612F5072495F6DF0F73 /* PBXTargetDependency */,
+			);
+			name = SpeedometerGPSUITests;
+			packageProductDependencies = (
+			);
+			productName = SpeedometerGPSUITests;
+			productReference = D0781D58C13755F8C7656CF5 /* SpeedometerGPSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AA497DF2608D7387C9FD9977 /* SpeedometerGPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FACB016875E07162FED029 /* Build configuration list for PBXNativeTarget "SpeedometerGPS" */;
+			buildPhases = (
+				F31AF485F03B3F27F3571F95 /* Validate localization tables */,
+				D1B5C7157BB8351149444D57 /* Sources */,
+				E324639E64A4395EC7AA0D97 /* Resources */,
+				570D27ECEED980F68EF60FCB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedometerGPS;
+			packageProductDependencies = (
+				A803D660F76FDC76F132905E /* MapLibre */,
+			);
+			productName = SpeedometerGPS;
+			productReference = 7CCDB30013CB4C0D445F32C5 /* SpeedometerGPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C14686C13A3E090D019942E6 /* SpeedometerGPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CDEA1622D7C0CE92155CCEA /* Build configuration list for PBXNativeTarget "SpeedometerGPSTests" */;
+			buildPhases = (
+				C69FA1186B4E6D0CCAE95EDC /* Sources */,
+				674F274CBEB1B77B78BA5901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30EB331231977B4E2C2D9335 /* PBXTargetDependency */,
+			);
+			name = SpeedometerGPSTests;
+			packageProductDependencies = (
+			);
+			productName = SpeedometerGPSTests;
+			productReference = 6F66D65040DE1E8709FF6FB0 /* SpeedometerGPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE83199A1A7E4B218C984B50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5BBA5F334366F10EE00C3A75 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA497DF2608D7387C9FD9977;
+					};
+					AA497DF2608D7387C9FD9977 = {
+						ProvisioningStyle = Automatic;
+					};
+					C14686C13A3E090D019942E6 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF87B1E689D6A25FB364B277 /* Build configuration list for PBXProject "SpeedometerGPS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ar,
+				bn,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				en,
+				"en-AU",
+				"en-CA",
+				"en-GB",
+				"en-US",
+				es,
+				"es-ES",
+				"es-MX",
+				fi,
+				fr,
+				"fr-CA",
+				gu,
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				kn,
+				ko,
+				ml,
+				mr,
+				ms,
+				nl,
+				no,
+				or,
+				pa,
+				pl,
+				"pt-BR",
+				"pt-PT",
+				ro,
+				ru,
+				sk,
+				sl,
+				sv,
+				ta,
+				te,
+				th,
+				tr,
+				uk,
+				ur,
+				vi,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 67FFCFA57FDDE407DF133B4A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7114D87B5CCF10B00D3131A1 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C41FD4269C3A1327E8B5D512 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA497DF2608D7387C9FD9977 /* SpeedometerGPS */,
+				C14686C13A3E090D019942E6 /* SpeedometerGPSTests */,
+				5BBA5F334366F10EE00C3A75 /* SpeedometerGPSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		674F274CBEB1B77B78BA5901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19EF936535105D99BC494BD /* Configuration.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E324639E64A4395EC7AA0D97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8819C920A02470A23173F514 /* Assets.xcassets in Resources */,
+				F472432C217F9C64F9390AF5 /* InfoPlist.strings in Resources */,
+				F3A56A1D35801B8CDED1FF54 /* Localizable.strings in Resources */,
+				A9A158677DAE93AE8C8D6590 /* MapLibreNotices.txt in Resources */,
+				E8B4548F88B72859D6D921C6 /* OSMLiberty.json in Resources */,
+				6431F3D4DB32FFA80298DDE4 /* OfflineRegions in Resources */,
+				9DABF0A1FD58CC787604E03E /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F31AF485F03B3F27F3571F95 /* Validate localization tables */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Validate localization tables";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/i18n-check.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		425B42370BF7B19427CB24AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F10C05AD81EAD6DC86EB52 /* RemoteCameraUITests.swift in Sources */,
+				418A168D1A3118E3CA6CE75A /* SpeedometerGPSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69FA1186B4E6D0CCAE95EDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D581FFF702A2EFBCB6E6C9 /* ActiveTripPersistenceTests.swift in Sources */,
+				0544C8823E6C610D88EC54AB /* RemoteCameraPhotosTests.swift in Sources */,
+				29934B72999AB32E91FF6641 /* RemoteCameraTests.swift in Sources */,
+				C6195D9E4806E81E82AC80C8 /* RouteGuideTests.swift in Sources */,
+				33BA2E64A516EA5E8D8EA5A4 /* SpeedometerGPSCoreTests.swift in Sources */,
+				4119AA7B2AD9B755DE9F5D15 /* TripVideoTests.swift in Sources */,
+				F3DB7A7A0669F91A2DBD569E /* TripRoutePreviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B5C7157BB8351149444D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14658561BC95E72ABB59D13D /* ActiveTripPersistence.swift in Sources */,
+				9BDB18901521F733984ED354 /* AppAudioSession.swift in Sources */,
+				6AA84D134B02BB01724324BE /* AppRootView.swift in Sources */,
+				40AFFB8EB7BFDB69250FF002 /* AppSettings.swift in Sources */,
+				C0F433BF492F3C5B230A95C6 /* AppTheme.swift in Sources */,
+				A85A03DA9318CCC56634BB57 /* Controls.swift in Sources */,
+				8839142C8F2C4392A20BA4E8 /* DestructiveConfirmationModal.swift in Sources */,
+				6BFDEB587A787477B637C772 /* LaunchLoaderView.swift in Sources */,
+				4DB61011FF3D729FFA0A3AB9 /* Localization.swift in Sources */,
+				5AEC5B33DA5E62B3EE59A824 /* LocationMotionService.swift in Sources */,
+				DBECBE7BBF0F969FDF66696D /* LongRecordingProbe.swift in Sources */,
+				0A64804AC53B44316BA79103 /* MainShellView.swift in Sources */,
+				E580274AB99E5E220580E7A5 /* Models.swift in Sources */,
+				7292F8496E7784ADD3517951 /* TripRoutePreview.swift in Sources */,
+				C8EFF74B0BAFB65F852CF346 /* OSMMapResources.swift in Sources */,
+				493B075D65161690D29C03F9 /* OfflineMapsSettingsView.swift in Sources */,
+				4EFF288335CA9319E569D64B /* OfflineRegionPickerView.swift in Sources */,
+				6776A4ACC9B1E81E288A8C65 /* OfflineRegionCatalog.swift in Sources */,
+				FB884A5A860C537D201B0508 /* PaywallView.swift in Sources */,
+				3A8E4D717CF666CC610FB48E /* PlatformCompatibility.swift in Sources */,
+				D38BBA18BA2BDCBB287A6EA3 /* ReferenceRoute.swift in Sources */,
+				DC853DAD44BA8A40CD41D215 /* ReferenceRouteXMLParsers.swift in Sources */,
+				3E6E089AB4C170F5CD08F168 /* ReferenceRoutesSettingsView.swift in Sources */,
+				ABF397507B1AB8AA8B1CE976 /* RemoteCameraCapture.swift in Sources */,
+				7919652967A9042FD2A97D88 /* RemoteCameraController.swift in Sources */,
+				7710B1B765665889D8EF7801 /* RemoteCameraExternalInput.swift in Sources */,
+				962FAB5E172366087C451001 /* RemoteCameraExternalInputViews.swift in Sources */,
+				27866EF144F4385435801D3F /* RemoteCameraLink.swift in Sources */,
+				4A1E1752C7B0A337863F163C /* RemoteCameraPhotos.swift in Sources */,
+				8FD799CF90BA81130EAA233D /* RemoteCameraProtocol.swift in Sources */,
+				7213B0FFEB2368A78FBF4D77 /* RemoteCameraSounds.swift in Sources */,
+				B7E15E4FD3B3BC7A75B81797 /* RemoteCameraViews.swift in Sources */,
+				9D6B36D42A6A35B0CE18CCCC /* RouteArchiveStore.swift in Sources */,
+				65A036C6F7D7B1705203AE31 /* RouteExporter.swift in Sources */,
+				70F9194C5C625D7D86E6335B /* RouteGuide.swift in Sources */,
+				C1081EAB2CF78E1E993E6285 /* RouteGuideViews.swift in Sources */,
+				F962CD63C4A6753A3B3EA8B9 /* RouteMapView.swift in Sources */,
+				4019AE0C001C1C26143026EA /* ScreenshotCityFixture.swift in Sources */,
+				B27B22BBE95CEBC5017F6536 /* ScreenshotStateCatalog.swift in Sources */,
+				1A1BA78D5B3B87A1B21FBADE /* SettingsView.swift in Sources */,
+				0FFB31DE66AC4208D6EDB631 /* SpeedAlert.swift in Sources */,
+				AB05AA000000000000000001 /* HUDView.swift in Sources */,
+				9247B9D70B655C66797E1398 /* SpeedDashboardView.swift in Sources */,
+				A3C5B5F8C57391E7DD6E73A0 /* SpeedUnits.swift in Sources */,
+				0167ED8BB983DB0AECB263AC /* SpeedometerGPSApp.swift in Sources */,
+				6380E66A6060F270F34B1ACF /* SpeedometerGauge.swift in Sources */,
+				616EE5C3B17B9654D350B08B /* SubscriptionStore.swift in Sources */,
+				947223C1B8744E8123A79242 /* TrackPointStorage.swift in Sources */,
+				B79287F30BFC58E4E09FB807 /* TripDetailView.swift in Sources */,
+				E0C1C14B61FFB5241542FBD0 /* TripRecorder.swift in Sources */,
+				81238C5B37E45DF995549A1C /* TripRecoveryModal.swift in Sources */,
+				A845FDBEB26D98EA4DA26E84 /* TripVideoRecording.swift in Sources */,
+				10B296ED3057C8C47BE14A36 /* TripsView.swift in Sources */,
+				8878066585FB17E0D01C0DF6 /* WelcomeFlowView.swift in Sources */,
+				DF6BEE10992B8B067A043FA3 /* WelcomePresentationStore.swift in Sources */,
+				13D5B966EFCE3B8DB7EE7A05 /* WelcomeStoryTiming.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30EB331231977B4E2C2D9335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA497DF2608D7387C9FD9977 /* SpeedometerGPS */;
+			targetProxy = B2A2FB0614A9415E80467FFD /* PBXContainerItemProxy */;
+		};
+		B9017612F5072495F6DF0F73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA497DF2608D7387C9FD9977 /* SpeedometerGPS */;
+			targetProxy = ACE13AA1279B0250B7C4CE01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90C48E7ACE89AB75CF63BFC2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA25D05F7454F547326E74C9 /* ar */,
+				19A1D0E3DD1AE6462FA65346 /* bn */,
+				ACB22AB1F7E09A0C68E54B6E /* ca */,
+				DB3B4EE95EE8B86B46BF25B3 /* cs */,
+				287DC2646B98947192CEBED9 /* da */,
+				8D5A38E16305DB956DDF8ECA /* de */,
+				9756600121FC62FAA555DC1D /* el */,
+				A020F90AFA5F8959C19E7BD7 /* en */,
+				513C24E4CC36E3609F5FB9FD /* en-AU */,
+				ABA0FEE5166841D9247F2F3E /* en-CA */,
+				5BCBE8F28624AA2CEDB8CAA5 /* en-GB */,
+				0D3D5C0A8C78DC31197A0985 /* en-US */,
+				B3CA7B9D2E59B8AAAD712A83 /* es */,
+				F827E2A29436BDDFB1B146EE /* es-ES */,
+				E2E544CA733B2BA09E480B14 /* es-MX */,
+				EC2E17CA55EBACF364354D6D /* fi */,
+				24154EFF6503A0802BD5DBCA /* fr */,
+				C41E519684D5F698FDAB6820 /* fr-CA */,
+				97CBD5272B803770AF6262A9 /* gu */,
+				27C563F03912EC8D8456A016 /* he */,
+				1166A065A559B3407278AA1E /* hi */,
+				CC8CE5B469A3F287C3223BEF /* hr */,
+				4D70F1488158E0BBC2003DEB /* hu */,
+				28A68B70703C71ABE0949D2F /* id */,
+				17BF6605B52AF2FA9B08D00C /* it */,
+				6E84B883502A7DE72B387C3F /* ja */,
+				5EFBCC812076665192215122 /* kn */,
+				3303E60555EF3903E8C31A18 /* ko */,
+				B4A0EF8A76B63AFED03D8681 /* ml */,
+				F03D7FE38C074C66D346E5F5 /* mr */,
+				97E0DB03466959FAACD9F169 /* ms */,
+				A0B1BD7471C06B62098042D4 /* nl */,
+				BA243930F350BABD1F8E09D6 /* no */,
+				585D0D906A419314F278534A /* or */,
+				BEF237A47EC6FA1F42DAD3C4 /* pa */,
+				BB4C045C2DEFCCCC4C451E26 /* pl */,
+				DECBAA1025EE39EA1D68482E /* pt-BR */,
+				92C9AD8AE502781B4AC346AB /* pt-PT */,
+				451FB1BC0E249ADD83139715 /* ro */,
+				01B09A81B578E8000227A9AA /* ru */,
+				B63A1C3411FE6B66892DB4C8 /* sk */,
+				D61348C6CB3D8F4573CC1AC7 /* sl */,
+				3B195FB511CECBC09018325F /* sv */,
+				B8BF8357CC0584B8E9871129 /* ta */,
+				7CDA7AFAAB522A53BEBDB3A0 /* te */,
+				B6DB7E5537F7BF5B9D8C43B4 /* th */,
+				C2FCB4FBB42F389EAFACA8A6 /* tr */,
+				9A4BC99165083075658D21D1 /* uk */,
+				AE992F77317B63FDE3A09CB2 /* ur */,
+				BBC99486980EE24C7B3C423E /* vi */,
+				74244B69D81DB7A7D794B355 /* zh-Hans */,
+				17FEDF978F2AE69B18FB6C1B /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EF8CA7CA90B85352C1FC7848 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FF07FCA3A93BEED8B33C9D5 /* ar */,
+				95213777BCC668F26775A506 /* bn */,
+				16CA701817DCC1968FEC7A8D /* ca */,
+				FF3583A7F626CF4172247C39 /* cs */,
+				BBBC57BFC56769480A27718B /* da */,
+				98226C2631F10E161480809B /* de */,
+				0A72FFD9EAC1E751814A03AB /* el */,
+				357D3C5FFC13707A36C930A1 /* en */,
+				44D65A8B217E7E43586DB333 /* en-AU */,
+				559BBC5F1AA7CE30BDA1A3A1 /* en-CA */,
+				5C1F6A2336942FB1EF0E4118 /* en-GB */,
+				7A01B8904306D3DC9A906C73 /* en-US */,
+				E595E89028FD22CD1C86DD98 /* es */,
+				76C2637410A1175381947F21 /* es-ES */,
+				8D9295A0EC0FCFC555BC43F2 /* es-MX */,
+				2740F1662F6D961782672F1D /* fi */,
+				F4BFC29FCEC65BD71C4CC613 /* fr */,
+				0B59AC1FFB64633CD996AD68 /* fr-CA */,
+				D1D8ED0A6CCC55E0A7CE555A /* gu */,
+				ED52009214E9B562A436C0EB /* he */,
+				39A503A42331FC00CFE828C1 /* hi */,
+				01AF277A62455DAECDFDE509 /* hr */,
+				DA85A33E88CD6CFA82A0C13F /* hu */,
+				3CAEC0AF911BE012C83A9796 /* id */,
+				90C53417415BAC2821B5BA41 /* it */,
+				2E1963A74BFACFE67A1AAF17 /* ja */,
+				6CC8DD8A118FE1489B686BF5 /* kn */,
+				2AA83897BB60B849762410F4 /* ko */,
+				0017459D5AAB01FBFA1FBD65 /* ml */,
+				BDB2E918244CF6775CF4F8CF /* mr */,
+				4A74C8BA102179C92608A8F0 /* ms */,
+				7499C24B6B16DDDAAAE9F0A7 /* nl */,
+				B3AA53DEBAA5C4FF52503743 /* no */,
+				FE8CFF32469A4663F054A8A0 /* or */,
+				51E1CC1D6BBE97657D992579 /* pa */,
+				E6FFD665663A941F86AE2D90 /* pl */,
+				CA4B875097C9D80191D7D5A6 /* pt-BR */,
+				37197207DC0F408FB3EB91BB /* pt-PT */,
+				4E5DE4F31788F2865BB87658 /* ro */,
+				1162B921390B37C1923296AE /* ru */,
+				ACD2BACC9A7E547632FD98A1 /* sk */,
+				5A25C38C74F3BE202915F36D /* sl */,
+				8CDF199CFD6B253C24000A54 /* sv */,
+				AAEB88233F5032F445EB3515 /* ta */,
+				D1B08AE08E078F8FE4AD5B5D /* te */,
+				E6CCAFB3DA554813DC7369F6 /* th */,
+				DCEA6774CDD4CC2E106CDA29 /* tr */,
+				8FB924250C9600256C717E3D /* uk */,
+				19FA842ED40216F10DE3FC6B /* ur */,
+				034D0320F0ED6B71AD895CF8 /* vi */,
+				C44FFF415C9AD2CF3FE7BCAF /* zh-Hans */,
+				4DB0A3C2B1E1A022D39C4AA6 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FD108256C2419BBAE489B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8F38FF5A826701C9155EDEC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/SpeedometerGPS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowcoded.speedometergps;
+				PRODUCT_NAME = SpeedometerGPS;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90AB8B7F416936ED02368C70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowcoded.speedometergps.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpeedometerGPS;
+			};
+			name = Debug;
+		};
+		9DAD01697D12BF29C7FAEFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE5DDDADC20BC6C7CF929929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowcoded.speedometergps.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedometerGPS.app/SpeedometerGPS";
+			};
+			name = Debug;
+		};
+		C2B22E2B987791F6A5F75C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/SpeedometerGPS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 8;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowcoded.speedometergps;
+				PRODUCT_NAME = SpeedometerGPS;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D900FE7219D75157965C0037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowcoded.speedometergps.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedometerGPS.app/SpeedometerGPS";
+			};
+			name = Release;
+		};
+		F00FC5D34EF86AB800948DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowcoded.speedometergps.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpeedometerGPS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CDEA1622D7C0CE92155CCEA /* Build configuration list for PBXNativeTarget "SpeedometerGPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5DDDADC20BC6C7CF929929 /* Debug */,
+				D900FE7219D75157965C0037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A9FACB016875E07162FED029 /* Build configuration list for PBXNativeTarget "SpeedometerGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F38FF5A826701C9155EDEC7 /* Debug */,
+				C2B22E2B987791F6A5F75C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BF87B1E689D6A25FB364B277 /* Build configuration list for PBXProject "SpeedometerGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAD01697D12BF29C7FAEFF0 /* Debug */,
+				04FD108256C2419BBAE489B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E7C3E69C467F1BCDCA07CD01 /* Build configuration list for PBXNativeTarget "SpeedometerGPSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90AB8B7F416936ED02368C70 /* Debug */,
+				F00FC5D34EF86AB800948DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7114D87B5CCF10B00D3131A1 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = exactVersion;
+				version = 6.31.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A803D660F76FDC76F132905E /* MapLibre */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7114D87B5CCF10B00D3131A1 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapLibre;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FE83199A1A7E4B218C984B50 /* Project object */;
+}

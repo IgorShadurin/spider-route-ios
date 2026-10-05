@@ -1,0 +1,8 @@
+"CFBundleDisplayName" = "SpiderRoute";
+"CFBundleName" = "SpiderRoute";
+"NSLocationWhenInUseUsageDescription" = "SpiderRoute, hızınızı göstermek ve diğer uygulamaları kullanırken de sürüşünüzü kaydetmek için konumunuzu kullanır.";
+"NSMotionUsageDescription" = "SpiderRoute, kaydedilen sürüşlerinize etkinlik bağlamı eklemek için hareket ve fitness etkinliğini kullanır.";
+"NSCameraUsageDescription" = "SpiderRoute, eşleştirilmiş telefonunuzdan kaydı başlattığınızda video kaydetmek için kamerayı kullanır.";
+"NSMicrophoneUsageDescription" = "SpiderRoute, yalnızca ses kaydı etkinleştirildiğinde videolarınızla ses kaydeder.";
+"NSLocalNetworkUsageDescription" = "SpiderRoute, internetsiz video kaydını kontrol etmek için iki telefonunuzu yerel olarak bağlar.";
+"NSPhotoLibraryAddUsageDescription" = "SpiderRoute, kaydedilen videoları fotoğraf arşivinize ekler ve uygulamada bir kopyasını saklar.";

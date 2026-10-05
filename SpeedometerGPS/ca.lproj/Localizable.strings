@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Fes que cada ruta compti";
-"paywall_subtitle" = "Enregistrament de rutes, historial de rutes i sincronització amb iCloud";
+"paywall_subtitle" = "Enregistrament de trajectes";
 "paywall_benefit_routes" = "Enregistra rutes i conserva els teus itineraris";
-"settings_access_free" = "La velocitat en directe i els avisos de velocitat estan disponibles. Plus desbloqueja l’enregistrament de rutes, l’historial de rutes i la sincronització amb iCloud.";
+"settings_access_free" = "Només cal Plus per enregistrar trajectes. Les altres funcions són gratuïtes.";
 "settings_access_plus" = "SpiderRoute Plus està actiu en aquest Apple ID.";
 "settings_clear_history" = "Esborra tot l’historial de rutes";
 "settings_icloud_sync" = "Sincronitza les rutes amb iCloud";

@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Faz com que cada volta conte";
-"paywall_subtitle" = "Registo de percursos, histórico de voltas e sincronização com iCloud";
+"paywall_subtitle" = "Gravação de percursos";
 "paywall_benefit_routes" = "Regista voltas e guarda os teus percursos";
-"settings_access_free" = "A velocidade em tempo real e os avisos de velocidade estão disponíveis. O Plus desbloqueia o registo de voltas, o histórico de voltas e a sincronização com iCloud.";
+"settings_access_free" = "Só a gravação de percursos requer Plus. As restantes funcionalidades são gratuitas.";
 "settings_access_plus" = "O SpiderRoute Plus está ativo neste Apple ID.";
 "settings_clear_history" = "Limpar todo o histórico de voltas";
 "settings_icloud_sync" = "Sincronizar voltas com iCloud";

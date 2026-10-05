@@ -332,9 +332,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Make every ride count";
-"paywall_subtitle" = "Route recording, ride history and iCloud sync";
+"paywall_subtitle" = "Ride recording";
 "paywall_benefit_routes" = "Record rides and keep your routes";
-"settings_access_free" = "Live speed and speed alerts are available. Plus unlocks ride recording, ride history and iCloud sync.";
+"settings_access_free" = "Only ride recording requires Plus. All other features are free.";
 "settings_access_plus" = "SpiderRoute Plus is active on this Apple ID.";
 "settings_clear_history" = "Clear All Ride History";
 "settings_icloud_sync" = "Sync rides with iCloud";

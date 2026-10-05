@@ -332,9 +332,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Пусть каждая поездка имеет значение";
-"paywall_subtitle" = "Запись маршрутов, история поездок и синхронизация с iCloud";
+"paywall_subtitle" = "Запись поездок";
 "paywall_benefit_routes" = "Записывайте поездки и сохраняйте маршруты";
-"settings_access_free" = "Доступны текущая скорость и предупреждения о скорости. Plus открывает запись поездок, историю поездок и синхронизацию с iCloud.";
+"settings_access_free" = "Plus нужен только для записи поездок. Все остальные функции бесплатны.";
 "settings_access_plus" = "SpiderRoute Plus активен для этого Apple ID.";
 "settings_clear_history" = "Очистить всю историю поездок";
 "settings_icloud_sync" = "Синхронизировать поездки с iCloud";

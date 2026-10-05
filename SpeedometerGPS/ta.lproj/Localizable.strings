@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "ஒவ்வொரு பயணமும் முக்கியம்";
-"paywall_subtitle" = "பாதை பதிவு, பயண வரலாறு மற்றும் iCloud ஒத்திசைவு";
+"paywall_subtitle" = "பயணப் பதிவு";
 "paywall_benefit_routes" = "பயணங்களைப் பதிவுசெய்து உங்கள் பாதைகளை வைத்திருங்கள்";
-"settings_access_free" = "நேரடி வேகமும் வேக எச்சரிக்கைகளும் கிடைக்கும். Plus மூலம் பயணப் பதிவு, பயண வரலாறு மற்றும் iCloud ஒத்திசைவு திறக்கப்படும்.";
+"settings_access_free" = "பயணத்தைப் பதிவு செய்ய மட்டுமே Plus தேவை. மற்ற அம்சங்கள் இலவசம்.";
 "settings_access_plus" = "இந்த Apple ID-யில் SpiderRoute Plus செயலில் உள்ளது.";
 "settings_clear_history" = "அனைத்து பயண வரலாற்றையும் அழி";
 "settings_icloud_sync" = "iCloud உடன் பயணங்களை ஒத்திசை";

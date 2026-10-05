@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "हर राइड को अहम बनाएं";
-"paywall_subtitle" = "रूट रिकॉर्डिंग, राइड इतिहास और iCloud सिंक";
+"paywall_subtitle" = "यात्रा रिकॉर्डिंग";
 "paywall_benefit_routes" = "राइड रिकॉर्ड करें और अपने रूट सहेजें";
-"settings_access_free" = "लाइव गति और गति चेतावनियां उपलब्ध हैं। Plus से राइड रिकॉर्डिंग, राइड इतिहास और iCloud सिंक अनलॉक होते हैं।";
+"settings_access_free" = "केवल यात्रा रिकॉर्ड करने के लिए Plus ज़रूरी है। बाकी सुविधाएँ मुफ़्त हैं।";
 "settings_access_plus" = "इस Apple ID पर SpiderRoute Plus सक्रिय है।";
 "settings_clear_history" = "सारा राइड इतिहास मिटाएं";
 "settings_icloud_sync" = "राइड्स को iCloud से सिंक करें";

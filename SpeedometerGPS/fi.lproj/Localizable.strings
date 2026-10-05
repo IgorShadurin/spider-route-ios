@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Tee jokaisesta ajosta merkityksellinen";
-"paywall_subtitle" = "Reittitallennus, ajojen historia ja iCloud-synkronointi";
+"paywall_subtitle" = "Matkojen tallennus";
 "paywall_benefit_routes" = "Tallenna ajoja ja säilytä reittisi";
-"settings_access_free" = "Nopea nopeusnäyttö ja nopeushälytykset ovat käytettävissä. Plus avaa ajojen tallennuksen, ajojen historian ja iCloud-synkronoinnin.";
+"settings_access_free" = "Vain matkojen tallennus vaatii Plus-tilauksen. Muut ominaisuudet ovat ilmaisia.";
 "settings_access_plus" = "SpiderRoute Plus on aktiivinen tällä Apple ID:llä.";
 "settings_clear_history" = "Tyhjennä koko ajohistoria";
 "settings_icloud_sync" = "Synkronoi ajot iCloudin kanssa";

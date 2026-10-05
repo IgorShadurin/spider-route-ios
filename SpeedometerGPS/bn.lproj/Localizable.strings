@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "প্রতিটি রাইডকে মূল্যবান করুন";
-"paywall_subtitle" = "রুট রেকর্ডিং, রাইড ইতিহাস ও iCloud সিঙ্ক";
+"paywall_subtitle" = "যাত্রা রেকর্ডিং";
 "paywall_benefit_routes" = "রাইড রেকর্ড করুন ও রুটগুলো রাখুন";
-"settings_access_free" = "লাইভ গতি ও গতি সতর্কতা উপলভ্য। Plus রাইড রেকর্ডিং, রাইড ইতিহাস ও iCloud সিঙ্ক আনলক করে।";
+"settings_access_free" = "শুধু যাত্রা রেকর্ড করতে Plus প্রয়োজন। অন্য সুবিধাগুলো বিনামূল্যে।";
 "settings_access_plus" = "এই Apple ID-তে SpiderRoute Plus সক্রিয়।";
 "settings_clear_history" = "সব রাইড ইতিহাস মুছুন";
 "settings_icloud_sync" = "iCloud-এর সঙ্গে রাইড সিঙ্ক করুন";

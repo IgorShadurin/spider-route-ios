@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Számítson minden utad";
-"paywall_subtitle" = "Útvonalrögzítés, utazási előzmények és iCloud-szinkronizálás";
+"paywall_subtitle" = "Utak rögzítése";
 "paywall_benefit_routes" = "Rögzítsd az utakat, és őrizd meg az útvonalaidat";
-"settings_access_free" = "Az élő sebesség és a sebességriasztások elérhetők. A Plus feloldja az útrögzítést, az utazási előzményeket és az iCloud-szinkronizálást.";
+"settings_access_free" = "Csak az utak rögzítéséhez szükséges Plus. A többi funkció ingyenes.";
 "settings_access_plus" = "A SpiderRoute Plus aktív ezen az Apple ID-n.";
 "settings_clear_history" = "Összes utazási előzmény törlése";
 "settings_icloud_sync" = "Utazások szinkronizálása az iClouddal";

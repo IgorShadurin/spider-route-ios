@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "כל רכיבה נחשבת";
-"paywall_subtitle" = "הקלטת מסלולים, היסטוריית רכיבות וסנכרון עם iCloud";
+"paywall_subtitle" = "הקלטת נסיעות";
 "paywall_benefit_routes" = "הקלט/י רכיבות ושמור/י את המסלולים שלך";
-"settings_access_free" = "מהירות חיה והתראות מהירות זמינות. Plus פותח הקלטת רכיבות, היסטוריית רכיבות וסנכרון עם iCloud.";
+"settings_access_free" = "רק הקלטת נסיעות דורשת Plus. שאר התכונות בחינם.";
 "settings_access_plus" = "SpiderRoute Plus פעיל עבור Apple ID זה.";
 "settings_clear_history" = "מחיקת כל היסטוריית הרכיבות";
 "settings_icloud_sync" = "סנכרון רכיבות עם iCloud";

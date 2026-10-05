@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Jadikan setiap perjalanan berarti";
-"paywall_subtitle" = "Perekaman rute, riwayat perjalanan, dan sinkronisasi iCloud";
+"paywall_subtitle" = "Perekaman perjalanan";
 "paywall_benefit_routes" = "Rekam perjalanan dan simpan rute Anda";
-"settings_access_free" = "Kecepatan langsung dan peringatan kecepatan tersedia. Plus membuka perekaman perjalanan, riwayat perjalanan, dan sinkronisasi iCloud.";
+"settings_access_free" = "Hanya perekaman perjalanan yang memerlukan Plus. Fitur lainnya gratis.";
 "settings_access_plus" = "SpiderRoute Plus aktif untuk Apple ID ini.";
 "settings_clear_history" = "Hapus Semua Riwayat Perjalanan";
 "settings_icloud_sync" = "Sinkronkan perjalanan dengan iCloud";

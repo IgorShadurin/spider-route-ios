@@ -11,7 +11,7 @@ Keep current user instructions ahead of project defaults. Preserve unrelated wor
 - iOS 15 is the compatibility floor; iPhone and iPad are supported. Treat iPhone 6s Plus as a performance constraint.
 - Keep the internal SpeedometerGPS target and existing saved-data formats compatible.
 - Default navigation is Map, Speed, Rides; Camera appears only for its opt-in role.
-- Live speed, warnings, map browsing, following, full-screen maps, offline downloads, and imported routes do not require Plus. New ride recording and HUD presentation require verified Plus access. Preserve access to saved rides and exports.
+- Live speed, warnings, map browsing, following, full-screen maps, offline downloads, and imported routes do not require Plus. Only new ride recording requires verified Plus access. HUD, ride history, iCloud sync, and saved-ride exports are free.
 - HUD is default-off in Settings, with a header launch action only when enabled. Retain live speed, mirror, colors, canvas rotation, and readable dark controls.
 - Full-screen clock visibility persists in AppSettings, defaulting to hidden. Fit unboxed HH:mm digits into the fixed space beside the controls. Follow/Collapse controls and metrics must not move when the clock changes visibility.
 - Keep visible map attribution and safe-area clearance. Do not send recorded tracks to a map provider.

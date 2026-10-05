@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "모든 라이딩을 의미 있게";
-"paywall_subtitle" = "경로 기록, 라이딩 기록 및 iCloud 동기화";
+"paywall_subtitle" = "주행 기록";
 "paywall_benefit_routes" = "라이딩을 기록하고 경로를 보관하세요";
-"settings_access_free" = "실시간 속도와 속도 알림을 이용할 수 있습니다. Plus에서는 라이딩 기록, 라이딩 기록 및 iCloud 동기화가 잠금 해제됩니다.";
+"settings_access_free" = "주행 기록에만 Plus가 필요합니다. 다른 모든 기능은 무료입니다.";
 "settings_access_plus" = "이 Apple ID에서 SpiderRoute Plus를 사용 중입니다.";
 "settings_clear_history" = "모든 라이딩 기록 지우기";
 "settings_icloud_sync" = "라이딩을 iCloud와 동기화";

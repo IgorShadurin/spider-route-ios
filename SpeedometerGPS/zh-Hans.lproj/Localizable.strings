@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "让每次骑行都值得记录";
-"paywall_subtitle" = "路线记录、骑行历史记录和 iCloud 同步";
+"paywall_subtitle" = "骑行记录";
 "paywall_benefit_routes" = "记录骑行并保存你的路线";
-"settings_access_free" = "可使用实时速度和速度提醒。Plus 可解锁骑行记录、骑行历史记录和 iCloud 同步。";
+"settings_access_free" = "仅录制骑行需要 Plus，其他功能均免费。";
 "settings_access_plus" = "此 Apple ID 已启用 SpiderRoute Plus。";
 "settings_clear_history" = "清除所有骑行历史记录";
 "settings_icloud_sync" = "将骑行与 iCloud 同步";

@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Laat elke rit meetellen";
-"paywall_subtitle" = "Ritten opnemen, ritgeschiedenis en iCloud-synchronisatie";
+"paywall_subtitle" = "Ritten opnemen";
 "paywall_benefit_routes" = "Neem ritten op en bewaar je routes";
-"settings_access_free" = "Live snelheid en snelheidswaarschuwingen zijn beschikbaar. Plus ontgrendelt ritopname, ritgeschiedenis en iCloud-synchronisatie.";
+"settings_access_free" = "Alleen voor het opnemen van ritten is Plus nodig. Andere functies zijn gratis.";
 "settings_access_plus" = "SpiderRoute Plus is actief op deze Apple ID.";
 "settings_clear_history" = "Alle ritgeschiedenis wissen";
 "settings_icloud_sync" = "Ritten synchroniseren met iCloud";

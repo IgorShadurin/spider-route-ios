@@ -35,7 +35,6 @@ struct MainShellView: View {
     @State private var hiddenTripIDs: Set<UUID> = []
     @State private var showingIncomingRouteError = false
     @State private var showingHUD = false
-    @State private var presentsHUDAfterPaywall = false
 
     init(location: LocationMotionService, recorder: TripRecorder, settings: AppSettings, routes: RouteArchiveStore, referenceRoute: ReferenceRouteStore, incomingReferenceRoute: IncomingReferenceRouteCoordinator, subscription: SubscriptionStore, languageManager: LanguageManager, startsWithPaywall: Bool, onInitialPaywallClosed: @escaping () -> Void) {
         self.location = location
@@ -378,21 +377,12 @@ struct MainShellView: View {
 
     private func showHUD() {
         guard settings.hudEnabled else { return }
-        guard subscription.isEntitled else {
-            presentsHUDAfterPaywall = true
-            showingPaywall = true
-            return
-        }
         showingHUD = true
     }
 
     private func paywallClosed() {
         if startsWithPaywall {
             onInitialPaywallClosed()
-        }
-        defer { presentsHUDAfterPaywall = false }
-        if presentsHUDAfterPaywall, settings.hudEnabled, subscription.isEntitled {
-            showingHUD = true
         }
     }
 

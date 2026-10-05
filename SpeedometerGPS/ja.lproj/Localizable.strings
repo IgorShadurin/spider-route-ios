@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "すべてのライドを大切に";
-"paywall_subtitle" = "ルート記録、ライド履歴、iCloud同期";
+"paywall_subtitle" = "走行記録";
 "paywall_benefit_routes" = "ライドを記録してルートを保存";
-"settings_access_free" = "現在の速度と速度アラートを利用できます。Plusではライド記録、ライド履歴、iCloud同期が利用可能です。";
+"settings_access_free" = "走行の記録にのみPlusが必要です。その他の機能は無料です。";
 "settings_access_plus" = "このApple IDでSpiderRoute Plusが有効です。";
 "settings_clear_history" = "すべてのライド履歴を消去";
 "settings_icloud_sync" = "ライドをiCloudと同期";

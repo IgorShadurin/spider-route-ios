@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Niech każda przejażdżka się liczy";
-"paywall_subtitle" = "Rejestrowanie tras, historia przejażdżek i synchronizacja z iCloud";
+"paywall_subtitle" = "Nagrywanie przejazdów";
 "paywall_benefit_routes" = "Rejestruj przejażdżki i zachowuj swoje trasy";
-"settings_access_free" = "Dostępne są bieżąca prędkość i ostrzeżenia o prędkości. Plus odblokowuje rejestrowanie przejażdżek, historię przejażdżek i synchronizację z iCloud.";
+"settings_access_free" = "Tylko nagrywanie przejazdów wymaga Plus. Pozostałe funkcje są bezpłatne.";
 "settings_access_plus" = "SpiderRoute Plus jest aktywny dla tego Apple ID.";
 "settings_clear_history" = "Wyczyść całą historię przejażdżek";
 "settings_icloud_sync" = "Synchronizuj przejażdżki z iCloud";

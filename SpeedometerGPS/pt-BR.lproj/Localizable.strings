@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Faça cada pedalada valer";
-"paywall_subtitle" = "Gravação de rotas, histórico de pedaladas e sincronização com o iCloud";
+"paywall_subtitle" = "Gravação de trajetos";
 "paywall_benefit_routes" = "Grave pedaladas e guarde suas rotas";
-"settings_access_free" = "Velocidade ao vivo e alertas de velocidade estão disponíveis. O Plus desbloqueia gravação de pedaladas, histórico e sincronização com o iCloud.";
+"settings_access_free" = "Somente a gravação de trajetos requer Plus. Os demais recursos são gratuitos.";
 "settings_access_plus" = "SpiderRoute Plus está ativo neste Apple ID.";
 "settings_clear_history" = "Apagar todo o histórico de pedaladas";
 "settings_icloud_sync" = "Sincronizar pedaladas com o iCloud";

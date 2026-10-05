@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "اجعل كل رحلة مهمة";
-"paywall_subtitle" = "تسجيل المسارات وسجل الرحلات والمزامنة مع iCloud";
+"paywall_subtitle" = "تسجيل الرحلات";
 "paywall_benefit_routes" = "سجّل رحلاتك واحتفظ بمساراتك";
-"settings_access_free" = "السرعة المباشرة وتنبيهات السرعة متاحتان. يفتح Plus تسجيل الرحلات وسجل الرحلات والمزامنة مع iCloud.";
+"settings_access_free" = "Plus لتسجيل الرحلات فقط. الميزات الأخرى مجانية.";
 "settings_access_plus" = "SpiderRoute Plus مفعّل على Apple ID هذا.";
 "settings_clear_history" = "مسح سجل الرحلات بالكامل";
 "settings_icloud_sync" = "مزامنة الرحلات مع iCloud";

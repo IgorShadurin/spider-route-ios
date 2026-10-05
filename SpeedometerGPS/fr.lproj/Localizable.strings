@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Faites compter chaque sortie";
-"paywall_subtitle" = "Enregistrement d’itinéraires, historique des sorties et synchronisation iCloud";
+"paywall_subtitle" = "Enregistrement des trajets";
 "paywall_benefit_routes" = "Enregistrez vos sorties et conservez vos itinéraires";
-"settings_access_free" = "La vitesse en direct et les alertes de vitesse sont disponibles. Plus déverrouille l’enregistrement des sorties, l’historique des sorties et la synchronisation iCloud.";
+"settings_access_free" = "Seul l’enregistrement des trajets nécessite Plus. Les autres fonctionnalités sont gratuites.";
 "settings_access_plus" = "SpiderRoute Plus est actif pour cet Apple ID.";
 "settings_clear_history" = "Effacer tout l’historique des sorties";
 "settings_icloud_sync" = "Synchroniser les sorties avec iCloud";

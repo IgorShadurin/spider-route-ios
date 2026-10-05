@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "讓每趟騎乘都值得";
-"paywall_subtitle" = "路線記錄、騎乘記錄與 iCloud 同步";
+"paywall_subtitle" = "騎乘記錄";
 "paywall_benefit_routes" = "記錄騎乘並保留您的路線";
-"settings_access_free" = "可使用即時速度與速度警示。Plus 可解鎖騎乘記錄、騎乘記錄與 iCloud 同步。";
+"settings_access_free" = "僅錄製騎乘需要 Plus，其他功能皆免費。";
 "settings_access_plus" = "此 Apple ID 的 SpiderRoute Plus 已啟用。";
 "settings_clear_history" = "清除所有騎乘記錄";
 "settings_icloud_sync" = "透過 iCloud 同步騎乘";

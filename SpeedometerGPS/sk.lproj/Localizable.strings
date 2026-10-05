@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Nech sa každá jazda počíta";
-"paywall_subtitle" = "Záznam trás, história jázd a synchronizácia cez iCloud";
+"paywall_subtitle" = "Záznam jázd";
 "paywall_benefit_routes" = "Zaznamenávajte jazdy a uchovávajte si svoje trasy";
-"settings_access_free" = "Živá rýchlosť a upozornenia na rýchlosť sú k dispozícii. Plus odomkne záznam jázd, históriu jázd a synchronizáciu cez iCloud.";
+"settings_access_free" = "Plus je potrebný iba na záznam jázd. Ostatné funkcie sú bezplatné.";
 "settings_access_plus" = "SpiderRoute Plus je aktívny pre toto Apple ID.";
 "settings_clear_history" = "Vymazať celú históriu jázd";
 "settings_icloud_sync" = "Synchronizovať jazdy cez iCloud";

@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Neka svaka vožnja vrijedi";
-"paywall_subtitle" = "Snimanje ruta, povijest vožnji i iCloud sinkronizacija";
+"paywall_subtitle" = "Snimanje vožnji";
 "paywall_benefit_routes" = "Snimi vožnje i sačuvaj svoje rute";
-"settings_access_free" = "Brzina uživo i upozorenja o brzini su dostupni. SpiderRoute Plus otključava snimanje vožnji, povijest vožnji i iCloud sinkronizaciju.";
+"settings_access_free" = "Samo snimanje vožnji zahtijeva Plus. Ostale su značajke besplatne.";
 "settings_access_plus" = "SpiderRoute Plus je aktivan na ovom Apple ID.";
 "settings_clear_history" = "Obriši cijelu povijest vožnji";
 "settings_icloud_sync" = "Sinkroniziraj vožnje s iCloudom";

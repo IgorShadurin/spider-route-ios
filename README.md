@@ -13,10 +13,10 @@ SpiderRoute is a GPS companion for bicycle and scooter rides. See your speed, fo
 - Import GPX, KML, GeoJSON, and CSV routes; display distance markers and choose route direction.
 - Record rides with SpiderRoute Plus, including background tracking and recovery of saved progress after an interrupted session.
 - Revisit saved rides and export them as GPX, KML, GeoJSON, or CSV.
-- Enable an optional mirrored HUD in Settings. HUD is off by default and requires Plus.
+- Enable an optional mirrored HUD in Settings. HUD is free and off by default.
 - Use the optional paired-phone Remote Camera feature over a local connection.
 
-Map browsing, full-screen maps, location following, offline downloads, imported routes, live speed, and speed warnings are available without Plus. Starting a new recording and opening HUD require Plus. Existing saved rides remain accessible and exportable. Plus supports annual and lifetime purchases through StoreKit; see the app for current availability and pricing.
+Map browsing, full-screen maps, location following, offline downloads, imported routes, live speed, and speed warnings are available without Plus. Only starting a new ride recording requires Plus. HUD, ride history, iCloud sync, and export of existing saved rides are free. Plus supports annual and lifetime purchases through StoreKit; see the app for current availability and pricing.
 
 The app supports iPhone and iPad on **iOS 15 or later**, with 52 localization bundles. It displays routes and location; it does not provide turn-by-turn navigation. The website has its own codebase, linked above; this repository does not imply automatic account or route synchronization with that website.
 

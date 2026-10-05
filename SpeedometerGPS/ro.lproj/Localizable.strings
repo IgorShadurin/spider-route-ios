@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Fă ca fiecare tură să conteze";
-"paywall_subtitle" = "Înregistrarea traseelor, istoricul turelor și sincronizare iCloud";
+"paywall_subtitle" = "Înregistrarea traseelor";
 "paywall_benefit_routes" = "Înregistrează turele și păstrează-ți traseele";
-"settings_access_free" = "Viteza în timp real și alertele de viteză sunt disponibile. Plus deblochează înregistrarea turelor, istoricul turelor și sincronizarea iCloud.";
+"settings_access_free" = "Doar înregistrarea traseelor necesită Plus. Celelalte funcții sunt gratuite.";
 "settings_access_plus" = "SpiderRoute Plus este activ pe acest Apple ID.";
 "settings_clear_history" = "Șterge tot istoricul turelor";
 "settings_icloud_sync" = "Sincronizează turele cu iCloud";

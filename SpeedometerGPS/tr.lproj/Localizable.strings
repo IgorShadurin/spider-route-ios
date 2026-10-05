@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Her sürüşü değerli kılın";
-"paywall_subtitle" = "Rota kaydı, sürüş geçmişi ve iCloud eşzamanlama";
+"paywall_subtitle" = "Sürüş kaydı";
 "paywall_benefit_routes" = "Sürüşleri kaydedin ve rotalarınızı saklayın";
-"settings_access_free" = "Canlı hız ve hız uyarıları kullanılabilir. Plus, sürüş kaydı, sürüş geçmişi ve iCloud eşzamanlamasının kilidini açar.";
+"settings_access_free" = "Yalnızca sürüş kaydı için Plus gerekir. Diğer özellikler ücretsizdir.";
 "settings_access_plus" = "SpiderRoute Plus bu Apple ID için etkin.";
 "settings_clear_history" = "Tüm Sürüş Geçmişini Sil";
 "settings_icloud_sync" = "Sürüşleri iCloud ile eşzamanla";

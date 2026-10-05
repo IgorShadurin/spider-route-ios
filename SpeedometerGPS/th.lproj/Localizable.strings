@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "ให้ทุกการปั่นมีความหมาย";
-"paywall_subtitle" = "บันทึกเส้นทาง ประวัติการปั่น และการซิงค์ iCloud";
+"paywall_subtitle" = "การบันทึกการเดินทาง";
 "paywall_benefit_routes" = "บันทึกการปั่นและเก็บเส้นทางของคุณ";
-"settings_access_free" = "สามารถดูความเร็วแบบเรียลไทม์และการแจ้งเตือนความเร็วได้ Plus ปลดล็อกการบันทึกการปั่น ประวัติการปั่น และการซิงค์ iCloud";
+"settings_access_free" = "เฉพาะการบันทึกการเดินทางเท่านั้นที่ต้องใช้ Plus ฟีเจอร์อื่น ๆ ใช้งานฟรี";
 "settings_access_plus" = "SpiderRoute Plus ใช้งานอยู่บน Apple ID นี้";
 "settings_clear_history" = "ล้างประวัติการปั่นทั้งหมด";
 "settings_icloud_sync" = "ซิงค์การปั่นกับ iCloud";

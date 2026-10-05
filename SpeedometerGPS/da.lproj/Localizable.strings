@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Få hver tur til at tælle";
-"paywall_subtitle" = "Ruteoptagelse, turhistorik og iCloud-synkronisering";
+"paywall_subtitle" = "Optagelse af ture";
 "paywall_benefit_routes" = "Optag ture og gem dine ruter";
-"settings_access_free" = "Livehastighed og hastighedsadvarsler er tilgængelige. Plus låser op for turoptagelse, turhistorik og iCloud-synkronisering.";
+"settings_access_free" = "Kun optagelse af ture kræver Plus. Andre funktioner er gratis.";
 "settings_access_plus" = "SpiderRoute Plus er aktiv på dette Apple ID.";
 "settings_clear_history" = "Ryd al turhistorik";
 "settings_icloud_sync" = "Synkroniser ture med iCloud";

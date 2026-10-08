@@ -55,7 +55,7 @@
 "route_activity" = "Aktiviti";
 "route_end_marker" = "Selesai";
 "route_export" = "Laluan Eksport";
-"route_export_body" = "Pilih format mudah alih untuk menyimpan salinan laluan yang dirakam ini.";
+"route_export_body" = "Pilih format, kemudian simpan atau kongsi laluan.";
 "route_export_failed_body" = "Fail laluan tidak dapat dibuat atau disimpan. Sila cuba lagi.";
 "route_export_failed_title" = "Tidak Dapat Mengeksport Laluan";
 "route_export_format_csv" = "jadual CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Tukar warna HUD";
 "hud_rotate" = "Putar HUD";
 "paywall_benefit_hud" = "Mod HUD";
+
+"route_export_share" = "Kongsi";
+"route_export_save" = "Simpan ke Fail";

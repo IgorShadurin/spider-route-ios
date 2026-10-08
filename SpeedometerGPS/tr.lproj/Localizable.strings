@@ -55,7 +55,7 @@
 "route_activity" = "Etkinlik";
 "route_end_marker" = "Sona ermek";
 "route_export" = "İhracat Rotası";
-"route_export_body" = "Bu kayıtlı rotanın bir kopyasını kaydetmek için taşınabilir bir format seçin.";
+"route_export_body" = "Bir biçim seçin, ardından rotayı kaydedin veya paylaşın.";
 "route_export_failed_body" = "Rota dosyası oluşturulamadı veya kaydedilemedi. Lütfen tekrar deneyin.";
 "route_export_failed_title" = "Rota Dışa Aktarılamadı";
 "route_export_format_csv" = "CSV tablosu";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD rengini değiştir";
 "hud_rotate" = "HUD'yi döndür";
 "paywall_benefit_hud" = "HUD modu";
+
+"route_export_share" = "Paylaş";
+"route_export_save" = "Dosyalara Kaydet";

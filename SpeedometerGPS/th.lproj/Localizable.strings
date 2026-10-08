@@ -55,7 +55,7 @@
 "route_activity" = "กิจกรรม";
 "route_end_marker" = "เสร็จ";
 "route_export" = "เส้นทางส่งออก";
-"route_export_body" = "เลือกรูปแบบพกพาเพื่อบันทึกสำเนาของเส้นทางที่บันทึกไว้นี้";
+"route_export_body" = "เลือกรูปแบบ แล้วบันทึกหรือแชร์เส้นทาง";
 "route_export_failed_body" = "ไม่สามารถสร้างหรือบันทึกไฟล์เส้นทางได้ โปรดลองอีกครั้ง";
 "route_export_failed_title" = "ไม่สามารถส่งออกเส้นทางได้";
 "route_export_format_csv" = "ตาราง CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "เปลี่ยนสีฮัด";
 "hud_rotate" = "หมุนฮัด";
 "paywall_benefit_hud" = "โหมดฮัด";
+
+"route_export_share" = "แชร์";
+"route_export_save" = "บันทึกไปยังไฟล์";

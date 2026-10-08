@@ -55,7 +55,7 @@
 "route_activity" = "Atividade";
 "route_end_marker" = "Concluir";
 "route_export" = "Rota de exportação";
-"route_export_body" = "Escolha um formato portátil para guardar uma cópia desta rota gravada.";
+"route_export_body" = "Escolha um formato e depois guarde ou partilhe o percurso.";
 "route_export_failed_body" = "O ficheiro de rota não pôde ser criado ou guardado. Por favor, tente novamente.";
 "route_export_failed_title" = "Não foi possível exportar a rota";
 "route_export_format_csv" = "Tabela CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Alterar cor do HUD";
 "hud_rotate" = "Rodar o HUD";
 "paywall_benefit_hud" = "Modo HUD";
+
+"route_export_share" = "Partilhar";
+"route_export_save" = "Guardar em Ficheiros";

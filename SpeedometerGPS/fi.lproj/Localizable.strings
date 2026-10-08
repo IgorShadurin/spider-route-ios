@@ -55,7 +55,7 @@
 "route_activity" = "Toiminta";
 "route_end_marker" = "Valmis";
 "route_export" = "Vientireitti";
-"route_export_body" = "Valitse kannettava muoto tallentaaksesi kopion tästä tallennetusta reitistä.";
+"route_export_body" = "Valitse muoto ja tallenna tai jaa reitti.";
 "route_export_failed_body" = "Reittitiedostoa ei voitu luoda tai tallentaa. Yritä uudelleen.";
 "route_export_failed_title" = "Reittiä ei voitu viedä";
 "route_export_format_csv" = "CSV-taulukko";
@@ -397,3 +397,6 @@
 "hud_color" = "Vaihda HUD-väriä";
 "hud_rotate" = "Kierrä HUD";
 "paywall_benefit_hud" = "HUD-tila";
+
+"route_export_share" = "Jaa";
+"route_export_save" = "Tallenna Tiedostoihin";

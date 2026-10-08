@@ -55,7 +55,7 @@
 "route_activity" = "Activiteit";
 "route_end_marker" = "Finish";
 "route_export" = "Exportroute";
-"route_export_body" = "Kies een draagbaar formaat om een ​​kopie van deze opgenomen route op te slaan.";
+"route_export_body" = "Kies een formaat en bewaar of deel de route.";
 "route_export_failed_body" = "Het routebestand kon niet worden gemaakt of opgeslagen. Probeer het opnieuw.";
 "route_export_failed_title" = "Kan route niet exporteren";
 "route_export_format_csv" = "CSV-tabel";
@@ -397,3 +397,6 @@
 "hud_color" = "Verander de HUD-kleur";
 "hud_rotate" = "Draai HUD";
 "paywall_benefit_hud" = "HUD-modus";
+
+"route_export_share" = "Deel";
+"route_export_save" = "Bewaar in Bestanden";

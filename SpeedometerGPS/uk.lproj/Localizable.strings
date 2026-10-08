@@ -55,7 +55,7 @@
 "route_activity" = "діяльність";
 "route_end_marker" = "Закінчити";
 "route_export" = "Експортний шлях";
-"route_export_body" = "Виберіть портативний формат, щоб зберегти копію цього записаного маршруту.";
+"route_export_body" = "Виберіть формат, потім збережіть маршрут або поділіться ним.";
 "route_export_failed_body" = "Не вдалося створити або зберегти файл маршруту. Спробуйте ще раз.";
 "route_export_failed_title" = "Не вдалося експортувати маршрут";
 "route_export_format_csv" = "Таблиця CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Змінити колір HUD";
 "hud_rotate" = "Повернути HUD";
 "paywall_benefit_hud" = "Режим HUD";
+
+"route_export_share" = "Поділитися";
+"route_export_save" = "Зберегти у Файли";

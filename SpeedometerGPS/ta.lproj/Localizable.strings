@@ -55,7 +55,7 @@
 "route_activity" = "செயல்பாடு";
 "route_end_marker" = "முடிக்கவும்";
 "route_export" = "ஏற்றுமதி பாதை";
-"route_export_body" = "இந்தப் பதிவுசெய்யப்பட்ட பாதையின் நகலைச் சேமிக்க, போர்ட்டபிள் வடிவமைப்பைத் தேர்வுசெய்யவும்.";
+"route_export_body" = "வடிவமைப்பைத் தேர்ந்தெடுத்து, வழித்தடத்தைச் சேமிக்கவும் அல்லது பகிரவும்.";
 "route_export_failed_body" = "வழிக் கோப்பை உருவாக்கவோ சேமிக்கவோ முடியவில்லை. மீண்டும் முயற்சிக்கவும்.";
 "route_export_failed_title" = "வழியை ஏற்றுமதி செய்ய முடியவில்லை";
 "route_export_format_csv" = "CSV அட்டவணை";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD நிறத்தை மாற்றவும்";
 "hud_rotate" = "HUD ஐ சுழற்று";
 "paywall_benefit_hud" = "HUD பயன்முறை";
+
+"route_export_share" = "பகிர்";
+"route_export_save" = "கோப்புகளில் சேமி";

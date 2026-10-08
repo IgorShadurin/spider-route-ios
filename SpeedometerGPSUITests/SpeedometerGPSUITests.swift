@@ -1085,6 +1085,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         let gpx = app.buttons["route.export.gpx"]
         XCTAssertTrue(gpx.waitForExistence(timeout: 8))
         gpx.tap()
+        app.buttons["route.export.save"].tap()
         let preparing = NSPredicate(format: "value CONTAINS %@", "Preparing route file")
         expectation(for: preparing, evaluatedWith: gpx)
         waitForExpectations(timeout: 3)
@@ -1101,6 +1102,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         XCTAssertTrue(gpx.waitForExistence(timeout: 3))
         XCTAssertTrue(gpx.isEnabled)
         gpx.tap()
+        app.buttons["route.export.save"].tap()
         XCTAssertTrue(app.navigationBars["Move"].waitForExistence(timeout: 15) || app.buttons["Save"].exists || app.buttons["Export"].exists)
     }
 
@@ -1821,7 +1823,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         app.launch()
 
         XCTAssertTrue(app.descendants(matching: .any)["screen.route-export"].waitForExistence(timeout: 5))
-        for identifier in ["route.export.gpx", "route.export.kml", "route.export.geojson", "route.export.csv"] {
+        for identifier in ["route.export.gpx", "route.export.kml", "route.export.geojson", "route.export.csv", "route.export.share", "route.export.save"] {
             let format = app.descendants(matching: .any)[identifier]
             XCTAssertTrue(format.waitForExistence(timeout: 3), "Missing initially visible \(identifier)")
             XCTAssertTrue(format.isHittable, "Format is below the initial safe viewport: \(identifier)")

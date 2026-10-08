@@ -55,7 +55,7 @@
 "route_activity" = "Активность";
 "route_end_marker" = "Финиш";
 "route_export" = "Экспортный маршрут";
-"route_export_body" = "Выберите портативный формат, чтобы сохранить копию записанного маршрута.";
+"route_export_body" = "Выберите формат, затем сохраните маршрут или поделитесь им.";
 "route_export_failed_body" = "Файл маршрута не удалось создать или сохранить. Пожалуйста, попробуйте еще раз.";
 "route_export_failed_title" = "Не удалось экспортировать маршрут";
 "route_export_format_csv" = "CSV-таблица";
@@ -399,3 +399,6 @@
 "hud_color" = "Изменить цвет HUD";
 "hud_rotate" = "Поворот HUD";
 "paywall_benefit_hud" = "Режим HUD";
+
+"route_export_share" = "Поделиться";
+"route_export_save" = "Сохранить в Файлы";

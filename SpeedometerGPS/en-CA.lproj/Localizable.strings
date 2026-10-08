@@ -55,7 +55,7 @@
 "route_activity" = "Activity";
 "route_end_marker" = "Finish";
 "route_export" = "Export Route";
-"route_export_body" = "Choose a portable format to save a copy of this recorded route.";
+"route_export_body" = "Choose a format, then save or share the route.";
 "route_export_failed_body" = "The route file could not be created or saved. Please try again.";
 "route_export_failed_title" = "Couldn’t Export Route";
 "route_export_format_csv" = "CSV table";
@@ -399,3 +399,6 @@
 "hud_color" = "Change HUD color";
 "hud_rotate" = "Rotate HUD";
 "paywall_benefit_hud" = "HUD mode";
+
+"route_export_share" = "Share";
+"route_export_save" = "Save to Files";

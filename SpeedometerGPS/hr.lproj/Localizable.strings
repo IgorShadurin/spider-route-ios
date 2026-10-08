@@ -55,7 +55,7 @@
 "route_activity" = "aktivnost";
 "route_end_marker" = "završiti";
 "route_export" = "Izvozna ruta";
-"route_export_body" = "Odaberite prijenosni format za spremanje kopije ove snimljene rute.";
+"route_export_body" = "Odaberite format, zatim spremite ili podijelite rutu.";
 "route_export_failed_body" = "Datoteku rute nije bilo moguće izraditi ili spremiti. Molimo pokušajte ponovo.";
 "route_export_failed_title" = "Nije moguće izvesti rutu";
 "route_export_format_csv" = "CSV tablica";
@@ -397,3 +397,6 @@
 "hud_color" = "Promijeni HUD boju";
 "hud_rotate" = "Rotirajte HUD";
 "paywall_benefit_hud" = "HUD način rada";
+
+"route_export_share" = "Podijeli";
+"route_export_save" = "Spremi u Datoteke";

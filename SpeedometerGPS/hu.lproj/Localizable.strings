@@ -55,7 +55,7 @@
 "route_activity" = "Tevékenység";
 "route_end_marker" = "Befejezés";
 "route_export" = "Exportálási útvonal";
-"route_export_body" = "Válasszon egy hordozható formátumot a rögzített útvonal másolatának mentéséhez.";
+"route_export_body" = "Válasszon formátumot, majd mentse vagy ossza meg az útvonalat.";
 "route_export_failed_body" = "Az útvonalfájlt nem sikerült létrehozni vagy menteni. Kérjük, próbálja újra.";
 "route_export_failed_title" = "Nem sikerült exportálni az útvonalat";
 "route_export_format_csv" = "CSV táblázat";
@@ -397,3 +397,6 @@
 "hud_color" = "Módosítsa a HUD színét";
 "hud_rotate" = "A HUD elforgatása";
 "paywall_benefit_hud" = "HUD mód";
+
+"route_export_share" = "Megosztás";
+"route_export_save" = "Mentés a Fájlokba";

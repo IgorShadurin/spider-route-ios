@@ -55,7 +55,7 @@
 "route_activity" = "活动";
 "route_end_marker" = "结束";
 "route_export" = "出口航线";
-"route_export_body" = "选择一种便携式格式来保存此记录路线的副本。";
+"route_export_body" = "选择格式，然后存储或共享路线。";
 "route_export_failed_body" = "无法创建或保存路线文件。请再试一次。";
 "route_export_failed_title" = "无法导出路线";
 "route_export_format_csv" = "CSV表";
@@ -397,3 +397,6 @@
 "hud_color" = "更改HUD颜色";
 "hud_rotate" = "旋转平视显示器";
 "paywall_benefit_hud" = "平视显示器模式";
+
+"route_export_share" = "共享";
+"route_export_save" = "存储到文件";

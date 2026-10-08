@@ -55,7 +55,7 @@
 "route_activity" = "क्रियाकलाप";
 "route_end_marker" = "समाप्त करा";
 "route_export" = "निर्यात मार्ग";
-"route_export_body" = "या रेकॉर्ड केलेल्या मार्गाची प्रत सेव्ह करण्यासाठी पोर्टेबल फॉरमॅट निवडा.";
+"route_export_body" = "फॉरमॅट निवडा, नंतर मार्ग जतन करा किंवा शेअर करा.";
 "route_export_failed_body" = "मार्ग फाइल तयार किंवा जतन करणे शक्य नाही. कृपया पुन्हा प्रयत्न करा.";
 "route_export_failed_title" = "मार्ग निर्यात करू शकलो नाही";
 "route_export_format_csv" = "CSV सारणी";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD रंग बदला";
 "hud_rotate" = "HUD फिरवा";
 "paywall_benefit_hud" = "HUD मोड";
+
+"route_export_share" = "शेअर करा";
+"route_export_save" = "फाइल्समध्ये जतन करा";

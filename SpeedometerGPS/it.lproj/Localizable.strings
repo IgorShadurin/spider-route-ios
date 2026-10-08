@@ -55,7 +55,7 @@
 "route_activity" = "Attività";
 "route_end_marker" = "Finisci";
 "route_export" = "Esporta percorso";
-"route_export_body" = "Scegli un formato portatile per salvare una copia di questo percorso registrato.";
+"route_export_body" = "Scegli un formato, poi salva o condividi il percorso.";
 "route_export_failed_body" = "Impossibile creare o salvare il file del percorso. Per favore riprova.";
 "route_export_failed_title" = "Impossibile esportare il percorso";
 "route_export_format_csv" = "Tabella CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Cambia il colore dell'HUD";
 "hud_rotate" = "Ruota l'HUD";
 "paywall_benefit_hud" = "Modalità HUD";
+
+"route_export_share" = "Condividi";
+"route_export_save" = "Salva su File";

@@ -55,7 +55,7 @@
 "route_activity" = "활동";
 "route_end_marker" = "마치다";
 "route_export" = "수출 경로";
-"route_export_body" = "이 녹음된 경로의 복사본을 저장하려면 휴대용 형식을 선택하세요.";
+"route_export_body" = "형식을 선택한 후 경로를 저장하거나 공유하세요.";
 "route_export_failed_body" = "경로 파일을 생성하거나 저장할 수 없습니다. 다시 시도해 주세요.";
 "route_export_failed_title" = "경로를 내보낼 수 없습니다.";
 "route_export_format_csv" = "CSV 테이블";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD 색상 변경";
 "hud_rotate" = "HUD 회전";
 "paywall_benefit_hud" = "HUD 모드";
+
+"route_export_share" = "공유";
+"route_export_save" = "파일에 저장";

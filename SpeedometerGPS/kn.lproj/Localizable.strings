@@ -55,7 +55,7 @@
 "route_activity" = "ಚಟುವಟಿಕೆ";
 "route_end_marker" = "ಮುಗಿಸು";
 "route_export" = "ರಫ್ತು ಮಾರ್ಗ";
-"route_export_body" = "ಈ ರೆಕಾರ್ಡ್ ಮಾಡಿದ ಮಾರ್ಗದ ನಕಲನ್ನು ಉಳಿಸಲು ಪೋರ್ಟಬಲ್ ಫಾರ್ಮ್ಯಾಟ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ.";
+"route_export_body" = "ಸ್ವರೂಪವನ್ನು ಆಯ್ಕೆಮಾಡಿ, ನಂತರ ಮಾರ್ಗವನ್ನು ಉಳಿಸಿ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಿ.";
 "route_export_failed_body" = "ಮಾರ್ಗ ಫೈಲ್ ಅನ್ನು ರಚಿಸಲು ಅಥವಾ ಉಳಿಸಲಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.";
 "route_export_failed_title" = "ಮಾರ್ಗವನ್ನು ರಫ್ತು ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ";
 "route_export_format_csv" = "CSV ಟೇಬಲ್";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD ಬಣ್ಣವನ್ನು ಬದಲಾಯಿಸಿ";
 "hud_rotate" = "HUD ಅನ್ನು ತಿರುಗಿಸಿ";
 "paywall_benefit_hud" = "HUD ಮೋಡ್";
+
+"route_export_share" = "ಹಂಚಿಕೊಳ್ಳಿ";
+"route_export_save" = "ಫೈಲ್‌ಗಳಲ್ಲಿ ಉಳಿಸಿ";

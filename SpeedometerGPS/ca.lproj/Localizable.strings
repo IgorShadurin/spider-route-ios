@@ -55,7 +55,7 @@
 "route_activity" = "Activitat";
 "route_end_marker" = "Acabar";
 "route_export" = "Exportar ruta";
-"route_export_body" = "Trieu un format portàtil per desar una còpia d'aquesta ruta gravada.";
+"route_export_body" = "Tria un format i després desa o comparteix la ruta.";
 "route_export_failed_body" = "No s'ha pogut crear ni desar el fitxer de ruta. Si us plau, torna-ho a provar.";
 "route_export_failed_title" = "No s'ha pogut exportar la ruta";
 "route_export_format_csv" = "Taula CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Canvia el color de l'HUD";
 "hud_rotate" = "Gira l'HUD";
 "paywall_benefit_hud" = "Mode HUD";
+
+"route_export_share" = "Comparteix";
+"route_export_save" = "Desa a Fitxers";

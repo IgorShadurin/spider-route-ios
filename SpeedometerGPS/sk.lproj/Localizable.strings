@@ -55,7 +55,7 @@
 "route_activity" = "Aktivita";
 "route_end_marker" = "Dokončiť";
 "route_export" = "Exportná trasa";
-"route_export_body" = "Vyberte prenosný formát na uloženie kópie tejto zaznamenanej trasy.";
+"route_export_body" = "Vyberte formát a potom trasu uložte alebo zdieľajte.";
 "route_export_failed_body" = "Súbor trasy nebolo možné vytvoriť alebo uložiť. Skúste to znova.";
 "route_export_failed_title" = "Trasu sa nepodarilo exportovať";
 "route_export_format_csv" = "CSV tabuľka";
@@ -397,3 +397,6 @@
 "hud_color" = "Zmeňte farbu HUD";
 "hud_rotate" = "Otočte HUD";
 "paywall_benefit_hud" = "Režim HUD";
+
+"route_export_share" = "Zdieľať";
+"route_export_save" = "Uložiť do Súborov";

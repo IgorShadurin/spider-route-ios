@@ -55,7 +55,7 @@
 "route_activity" = "活動";
 "route_end_marker" = "仕上げる";
 "route_export" = "輸出ルート";
-"route_export_body" = "この記録されたルートのコピーを保存するには、ポータブル形式を選択してください。";
+"route_export_body" = "形式を選択してから、ルートを保存または共有します。";
 "route_export_failed_body" = "ルート ファイルを作成または保存できませんでした。もう一度試してください。";
 "route_export_failed_title" = "ルートをエクスポートできませんでした";
 "route_export_format_csv" = "CSVテーブル";
@@ -397,3 +397,6 @@
 "hud_color" = "HUDの色を変更する";
 "hud_rotate" = "HUD を回転する";
 "paywall_benefit_hud" = "HUDモード";
+
+"route_export_share" = "共有";
+"route_export_save" = "ファイルに保存";

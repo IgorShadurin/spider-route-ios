@@ -12,7 +12,7 @@ SpiderRoute is a GPS companion for bicycle and scooter rides. See your speed, fo
 - Download OpenStreetMap regions for offline use and manage downloads on the device.
 - Import GPX, KML, GeoJSON, and CSV routes; display distance markers and choose route direction.
 - Record rides with SpiderRoute Plus, including background tracking and recovery of saved progress after an interrupted session.
-- Revisit saved rides and export them as GPX, KML, GeoJSON, or CSV.
+- Revisit saved rides and export them as GPX, KML, GeoJSON, or CSV. Choose a format, then use Share (AirDrop and compatible apps) or Save to Files.
 - Enable an optional mirrored HUD in Settings. HUD is free and off by default.
 - Use the optional paired-phone Remote Camera feature over a local connection.
 

@@ -259,6 +259,11 @@ private struct RouteExportSheet: View {
     @State private var exportSucceeded = false
     @State private var preparationID: UUID?
     @State private var isPreparing = false
+    @State private var exportAction: ExportAction = .save
+    @State private var sharedFile: SharedRouteFile?
+    @State private var retainedSharedFile: SharedRouteFile?
+
+    private enum ExportAction { case save, share }
 
     var body: some View {
         PlatformNavigationContainer {
@@ -270,20 +275,37 @@ private struct RouteExportSheet: View {
                         .fixedSize(horizontal: false, vertical: true)
 
                     ForEach(RouteExportFormat.allCases) { format in
-                        Button { beginExport(format) } label: {
+                        Button { selectedFormat = format; exportSucceeded = false } label: {
                             exportCard(format)
                             .frame(maxWidth: .infinity, minHeight: 66, alignment: .leading)
                             .padding(.horizontal, 14)
                             .padding(.vertical, 6)
                             .background(AppPalette.raisedCard(colorScheme), in: RoundedRectangle(cornerRadius: UIShape.compactCard, style: .continuous))
-                            .overlay(RoundedRectangle(cornerRadius: UIShape.compactCard, style: .continuous).stroke(Color.primary.opacity(0.08)))
+                            .overlay(RoundedRectangle(cornerRadius: UIShape.compactCard, style: .continuous).stroke(selectedFormat == format ? AppPalette.brandAccent : Color.primary.opacity(0.08), lineWidth: selectedFormat == format ? 2 : 1))
                             .contentShape(RoundedRectangle(cornerRadius: UIShape.compactCard, style: .continuous))
                         }
                         .buttonStyle(.plain)
                         .accessibilityIdentifier("route.export.\(format.rawValue)")
-                        .allowsHitTesting(!isPreparing && !showingFileExporter)
+                        .disabled(isPreparing || showingFileExporter || sharedFile != nil)
+                        .accessibilityAddTraits(selectedFormat == format ? .isSelected : [])
                         .accessibilityValue(isPreparing && selectedFormat == format ? L10n.tr("route_export_preparing") : "")
                     }
+
+                    VStack(spacing: 10) {
+                        Button { beginExport(.share) } label: {
+                            Label(L10n.tr("route_export_share"), systemImage: "square.and.arrow.up")
+                                .frame(maxWidth: .infinity, minHeight: 36)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .accessibilityIdentifier("route.export.share")
+                        Button { beginExport(.save) } label: {
+                            Label(L10n.tr("route_export_save"), systemImage: "folder")
+                                .frame(maxWidth: .infinity, minHeight: 36)
+                        }
+                        .buttonStyle(.bordered)
+                        .accessibilityIdentifier("route.export.save")
+                    }
+                    .disabled(isPreparing || showingFileExporter || sharedFile != nil)
 
                     if exportSucceeded {
                         Label(L10n.tr("route_export_success"), systemImage: PlatformSymbol.name("checkmark.circle.fill"))
@@ -329,14 +351,30 @@ private struct RouteExportSheet: View {
                 guard preparationID == request, !Task.isCancelled else { return }
                 document = prepared
                 filename = RouteExporter.filename(for: trip, format: selectedFormat)
+                if exportAction == .share {
+                    let data = prepared.data
+                    let name = filename
+                    let file = try await Task.detached(priority: .userInitiated) {
+                        try SharedRouteFile(data: data, filename: name)
+                    }.value
+                    guard preparationID == request, !Task.isCancelled else { return }
+                    retainedSharedFile = file
+                    sharedFile = file
+                } else {
+                    showingFileExporter = true
+                }
                 isPreparing = false
-                showingFileExporter = true
             } catch is CancellationError {
                 // Closing or cancelling must never present a stale exporter.
             } catch {
                 guard preparationID == request, !Task.isCancelled else { return }
                 isPreparing = false
                 showingError = true
+            }
+        }
+        .sheet(item: $sharedFile, onDismiss: { retainedSharedFile = nil }) { file in
+            RouteShareSheet(file: file) { error in
+                if error != nil { showingError = true }
             }
         }
         .fileExporter(
@@ -408,7 +446,7 @@ private struct RouteExportSheet: View {
                     .tint(AppPalette.brandAccent)
                     .accessibilityIdentifier("route.export.preparing")
             } else {
-                Image(systemName: PlatformSymbol.name(icon(for: format)))
+                Image(systemName: PlatformSymbol.name(selectedFormat == format ? "checkmark.circle.fill" : icon(for: format)))
                     .font(.title3.weight(.bold))
             }
         }
@@ -428,9 +466,9 @@ private struct RouteExportSheet: View {
             .background(AppPalette.brandAccent.opacity(0.12), in: Capsule())
     }
 
-    private func beginExport(_ format: RouteExportFormat) {
-        guard !isPreparing, !showingFileExporter else { return }
-        selectedFormat = format
+    private func beginExport(_ action: ExportAction) {
+        guard !isPreparing, !showingFileExporter, sharedFile == nil else { return }
+        exportAction = action
         exportSucceeded = false
         isPreparing = true
         preparationID = UUID()
@@ -444,4 +482,42 @@ private struct RouteExportSheet: View {
         case .csv: "tablecells"
         }
     }
+}
+
+
+/// Each share owns a separate temporary copy, retained through activity completion.
+private final class SharedRouteFile: Identifiable, @unchecked Sendable {
+    let id = UUID()
+    let url: URL
+
+    init(data: Data, filename: String) throws {
+        let directory = FileManager.default.temporaryDirectory
+            .appendingPathComponent("RouteShare-\(UUID().uuidString)", isDirectory: true)
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        url = directory.appendingPathComponent(filename)
+        do {
+            try data.write(to: url, options: .atomic)
+        } catch {
+            try? FileManager.default.removeItem(at: directory)
+            throw error
+        }
+    }
+
+    deinit { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+}
+
+private struct RouteShareSheet: UIViewControllerRepresentable {
+    let file: SharedRouteFile
+    let onCompletion: (Error?) -> Void
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: [file.url], applicationActivities: nil)
+        controller.completionWithItemsHandler = { [file] _, _, _, error in
+            // Keep the file alive even if SwiftUI dismisses before UIKit finishes.
+            withExtendedLifetime(file) { onCompletion(error) }
+        }
+        return controller
+    }
+
+    func updateUIViewController(_ controller: UIActivityViewController, context: Context) {}
 }

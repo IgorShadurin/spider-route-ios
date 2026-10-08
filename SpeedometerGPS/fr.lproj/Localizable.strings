@@ -55,7 +55,7 @@
 "route_activity" = "Activité";
 "route_end_marker" = "Terminer";
 "route_export" = "Itinéraire d'exportation";
-"route_export_body" = "Choisissez un format portable pour enregistrer une copie de cet itinéraire enregistré.";
+"route_export_body" = "Choisissez un format, puis enregistrez ou partagez le parcours.";
 "route_export_failed_body" = "Le fichier d'itinéraire n'a pas pu être créé ou enregistré. Veuillez réessayer.";
 "route_export_failed_title" = "Impossible d'exporter l'itinéraire";
 "route_export_format_csv" = "Tableau CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Changer la couleur du HUD";
 "hud_rotate" = "Faire pivoter le HUD";
 "paywall_benefit_hud" = "Mode HUD";
+
+"route_export_share" = "Partager";
+"route_export_save" = "Enregistrer dans Fichiers";

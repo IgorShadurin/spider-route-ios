@@ -55,7 +55,7 @@
 "route_activity" = "dejavnost";
 "route_end_marker" = "Končaj";
 "route_export" = "Izvozna pot";
-"route_export_body" = "Izberite prenosni format, da shranite kopijo te posnete poti.";
+"route_export_body" = "Izberite obliko, nato shranite ali delite pot.";
 "route_export_failed_body" = "Datoteke poti ni bilo mogoče ustvariti ali shraniti. prosim poskusite znova";
 "route_export_failed_title" = "Poti ni bilo mogoče izvoziti";
 "route_export_format_csv" = "tabela CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Spremenite barvo HUD";
 "hud_rotate" = "Zasukaj HUD";
 "paywall_benefit_hud" = "HUD način";
+
+"route_export_share" = "Deli";
+"route_export_save" = "Shrani v Datoteke";

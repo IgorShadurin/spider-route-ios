@@ -55,7 +55,7 @@
 "route_activity" = "Aktywność";
 "route_end_marker" = "Zakończ";
 "route_export" = "Trasa eksportu";
-"route_export_body" = "Wybierz format przenośny, aby zapisać kopię zarejestrowanej trasy.";
+"route_export_body" = "Wybierz format, a następnie zapisz lub udostępnij trasę.";
 "route_export_failed_body" = "Nie można utworzyć lub zapisać pliku trasy. Spróbuj ponownie.";
 "route_export_failed_title" = "Nie można wyeksportować trasy";
 "route_export_format_csv" = "Tabela CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Zmień kolor HUD-u";
 "hud_rotate" = "Obróć HUD";
 "paywall_benefit_hud" = "Tryb HUD-u";
+
+"route_export_share" = "Udostępnij";
+"route_export_save" = "Zachowaj w Plikach";

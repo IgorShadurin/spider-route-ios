@@ -55,7 +55,7 @@
 "route_activity" = "ਗਤੀਵਿਧੀ";
 "route_end_marker" = "ਸਮਾਪਤ";
 "route_export" = "ਨਿਰਯਾਤ ਰੂਟ";
-"route_export_body" = "ਇਸ ਰਿਕਾਰਡ ਕੀਤੇ ਰੂਟ ਦੀ ਇੱਕ ਕਾਪੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਇੱਕ ਪੋਰਟੇਬਲ ਫਾਰਮੈਟ ਚੁਣੋ।";
+"route_export_body" = "ਫਾਰਮੈਟ ਚੁਣੋ, ਫਿਰ ਰੂਟ ਸੁਰੱਖਿਅਤ ਕਰੋ ਜਾਂ ਸਾਂਝਾ ਕਰੋ।";
 "route_export_failed_body" = "ਰੂਟ ਫਾਈਲ ਬਣਾਈ ਜਾਂ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।";
 "route_export_failed_title" = "ਰੂਟ ਨਿਰਯਾਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ";
 "route_export_format_csv" = "CSV ਸਾਰਣੀ";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD ਰੰਗ ਬਦਲੋ";
 "hud_rotate" = "HUD ਨੂੰ ਘੁੰਮਾਓ";
 "paywall_benefit_hud" = "HUD ਮੋਡ";
+
+"route_export_share" = "ਸਾਂਝਾ ਕਰੋ";
+"route_export_save" = "ਫ਼ਾਈਲਾਂ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਕਰੋ";

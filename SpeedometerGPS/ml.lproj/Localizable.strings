@@ -55,7 +55,7 @@
 "route_activity" = "പ്രവർത്തനം";
 "route_end_marker" = "പൂർത്തിയാക്കുക";
 "route_export" = "കയറ്റുമതി റൂട്ട്";
-"route_export_body" = "ഈ റെക്കോർഡ് ചെയ്ത റൂട്ടിൻ്റെ ഒരു പകർപ്പ് സംരക്ഷിക്കാൻ ഒരു പോർട്ടബിൾ ഫോർമാറ്റ് തിരഞ്ഞെടുക്കുക.";
+"route_export_body" = "ഒരു ഫോർമാറ്റ് തിരഞ്ഞെടുത്ത് റൂട്ട് സൂക്ഷിക്കുകയോ പങ്കിടുകയോ ചെയ്യുക.";
 "route_export_failed_body" = "റൂട്ട് ഫയൽ സൃഷ്ടിക്കാനോ സംരക്ഷിക്കാനോ കഴിഞ്ഞില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക.";
 "route_export_failed_title" = "റൂട്ട് കയറ്റുമതി ചെയ്യാനായില്ല";
 "route_export_format_csv" = "CSV പട്ടിക";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD നിറം മാറ്റുക";
 "hud_rotate" = "HUD തിരിക്കുക";
 "paywall_benefit_hud" = "HUD മോഡ്";
+
+"route_export_share" = "പങ്കിടുക";
+"route_export_save" = "ഫയലുകളിൽ സൂക്ഷിക്കുക";

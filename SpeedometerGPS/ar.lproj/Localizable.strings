@@ -55,7 +55,7 @@
 "route_activity" = "نشاط";
 "route_end_marker" = "ينهي";
 "route_export" = "طريق التصدير";
-"route_export_body" = "اختر تنسيقًا محمولًا لحفظ نسخة من هذا المسار المسجل.";
+"route_export_body" = "اختر تنسيقًا، ثم احفظ المسار أو شاركه.";
 "route_export_failed_body" = "لا يمكن إنشاء ملف المسار أو حفظه. يرجى المحاولة مرة أخرى.";
 "route_export_failed_title" = "تعذر تصدير المسار";
 "route_export_format_csv" = "جدول CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "تغيير لون HUD";
 "hud_rotate" = "تدوير هود";
 "paywall_benefit_hud" = "وضع هود";
+
+"route_export_share" = "مشاركة";
+"route_export_save" = "حفظ في الملفات";

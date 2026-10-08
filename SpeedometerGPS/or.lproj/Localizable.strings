@@ -55,7 +55,7 @@
 "route_activity" = "କାର୍ଯ୍ୟକଳାପ";
 "route_end_marker" = "ସମାପ୍ତ";
 "route_export" = "ରପ୍ତାନି ମାର୍ଗ";
-"route_export_body" = "ଏହି ରେକର୍ଡ ହୋଇଥିବା ମାର୍ଗର ଏକ କପି ସଂରକ୍ଷଣ କରିବାକୁ ଏକ ପୋର୍ଟେବଲ୍ ଫର୍ମାଟ୍ ବାଛନ୍ତୁ |";
+"route_export_body" = "ଏକ ଫର୍ମାଟ୍ ବାଛନ୍ତୁ, ତାପରେ ମାର୍ଗ ସେଭ୍ କିମ୍ବା ସେୟାର କରନ୍ତୁ।";
 "route_export_failed_body" = "ମାର୍ଗ ଫାଇଲ୍ ସୃଷ୍ଟି କିମ୍ବା ସଞ୍ଚୟ ହୋଇପାରିବ ନାହିଁ | ଦୟାକରି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ |";
 "route_export_failed_title" = "ମାର୍ଗ ରପ୍ତାନି କରିପାରିବ ନାହିଁ |";
 "route_export_format_csv" = "CSV ଟେବୁଲ୍ |";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD ରଙ୍ଗ ପରିବର୍ତ୍ତନ କରନ୍ତୁ |";
 "hud_rotate" = "HUD ଘୂର୍ଣ୍ଣନ କରନ୍ତୁ |";
 "paywall_benefit_hud" = "HUD ମୋଡ୍ |";
+
+"route_export_share" = "ସେୟାର କରନ୍ତୁ";
+"route_export_save" = "ଫାଇଲ୍‌ରେ ସେଭ୍ କରନ୍ତୁ";

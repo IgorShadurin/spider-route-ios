@@ -55,7 +55,7 @@
 "route_activity" = "Aktivitet";
 "route_end_marker" = "Afslut";
 "route_export" = "Eksportrute";
-"route_export_body" = "Vælg et bærbart format for at gemme en kopi af denne optagede rute.";
+"route_export_body" = "Vælg et format, og gem eller del ruten.";
 "route_export_failed_body" = "Rutefilen kunne ikke oprettes eller gemmes. Prøv venligst igen.";
 "route_export_failed_title" = "Ruten kunne ikke eksporteres";
 "route_export_format_csv" = "CSV-tabel";
@@ -397,3 +397,6 @@
 "hud_color" = "Skift HUD-farve";
 "hud_rotate" = "Roter HUD";
 "paywall_benefit_hud" = "HUD-tilstand";
+
+"route_export_share" = "Del";
+"route_export_save" = "Gem i Arkiver";

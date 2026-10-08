@@ -27,3 +27,5 @@ Keep current user instructions ahead of project defaults. Preserve unrelated wor
 Open SpeedometerGPS.xcodeproj, scheme SpeedometerGPS. scripts/build-simulator.sh builds without device-specific signing. scripts/i18n-check.sh --release validates localization. Use focused unit/UI tests when requested and appropriate; respect explicit requests not to run tests. Inspect affected UI in the simulator. Do not treat a build as full device, performance, purchase, or release validation.
 
 The public tree intentionally excludes private operational guides, previous validation reports, local provisioning scripts, and generated artifacts. Do not restore them from local archives. Signing and production Apple-service configuration belong outside Git.
+
+- Saved ride export selects a format first, then offers separate Share and Save to Files actions. Use the native activity sheet for sharing file URLs; keep temporary copies alive until dismissal/completion and clean them up afterward. Both actions remain free.

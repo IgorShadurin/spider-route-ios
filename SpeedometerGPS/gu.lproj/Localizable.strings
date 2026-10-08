@@ -55,7 +55,7 @@
 "route_activity" = "પ્રવૃત્તિ";
 "route_end_marker" = "સમાપ્ત કરો";
 "route_export" = "નિકાસ માર્ગ";
-"route_export_body" = "આ રેકોર્ડ કરેલ રૂટની નકલ સાચવવા માટે પોર્ટેબલ ફોર્મેટ પસંદ કરો.";
+"route_export_body" = "ફોર્મેટ પસંદ કરો, પછી માર્ગ સાચવો અથવા શેર કરો.";
 "route_export_failed_body" = "રૂટ ફાઇલ બનાવી કે સાચવી શકાઈ નથી. કૃપા કરીને ફરી પ્રયાસ કરો.";
 "route_export_failed_title" = "રૂટ નિકાસ કરી શકાયો નથી";
 "route_export_format_csv" = "CSV ટેબલ";
@@ -397,3 +397,6 @@
 "hud_color" = "HUD રંગ બદલો";
 "hud_rotate" = "HUD ફેરવો";
 "paywall_benefit_hud" = "એચયુડી મોડ";
+
+"route_export_share" = "શેર કરો";
+"route_export_save" = "ફાઇલોમાં સાચવો";

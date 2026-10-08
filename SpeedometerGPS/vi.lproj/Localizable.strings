@@ -55,7 +55,7 @@
 "route_activity" = "Hoạt động";
 "route_end_marker" = "Kết thúc";
 "route_export" = "Lộ trình xuất khẩu";
-"route_export_body" = "Chọn định dạng di động để lưu bản sao của tuyến đường đã ghi này.";
+"route_export_body" = "Chọn định dạng, sau đó lưu hoặc chia sẻ lộ trình.";
 "route_export_failed_body" = "Không thể tạo hoặc lưu tệp lộ trình. Vui lòng thử lại.";
 "route_export_failed_title" = "Không thể xuất lộ trình";
 "route_export_format_csv" = "bảng CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "Thay đổi màu HUD";
 "hud_rotate" = "Xoay HUD";
 "paywall_benefit_hud" = "chế độ HUD";
+
+"route_export_share" = "Chia sẻ";
+"route_export_save" = "Lưu vào Tệp";

@@ -55,7 +55,7 @@
 "route_activity" = "פעילות";
 "route_end_marker" = "סיים";
 "route_export" = "מסלול ייצוא";
-"route_export_body" = "בחר פורמט נייד כדי לשמור עותק של מסלול מוקלט זה.";
+"route_export_body" = "בחרו פורמט, ואז שמרו או שתפו את המסלול.";
 "route_export_failed_body" = "לא ניתן ליצור או לשמור את קובץ המסלול. אנא נסה שוב.";
 "route_export_failed_title" = "לא ניתן לייצא מסלול";
 "route_export_format_csv" = "טבלת CSV";
@@ -397,3 +397,6 @@
 "hud_color" = "שנה צבע HUD";
 "hud_rotate" = "סובב HUD";
 "paywall_benefit_hud" = "מצב HUD";
+
+"route_export_share" = "שיתוף";
+"route_export_save" = "שמירה בקבצים";

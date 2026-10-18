@@ -8,7 +8,7 @@
       "internalID": "F1900005-7A32-4DF2-B490-149D51000005",
       "localizations": [
         {
-          "description": "Lifetime access to ride recording, ride history, and iCloud sync.",
+          "description": "Lifetime access to ride recording and offline maps.",
           "displayName": "SpiderRoute Plus Lifetime",
           "locale": "en_US"
         }
@@ -34,7 +34,7 @@
       "id": "F1900002-7A32-4DF2-B490-149D51000002",
       "localizations": [
         {
-          "description": "Ride recording, ride history, and iCloud sync.",
+          "description": "Ride recording and offline maps.",
           "displayName": "SpiderRoute Plus",
           "locale": "en_US"
         }
@@ -56,7 +56,7 @@
           },
           "localizations": [
             {
-              "description": "Ride recording, ride history, and iCloud sync.",
+              "description": "Ride recording and offline maps.",
               "displayName": "SpiderRoute Plus",
               "locale": "en_US"
             }

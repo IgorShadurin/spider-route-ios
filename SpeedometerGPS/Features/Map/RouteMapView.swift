@@ -546,6 +546,8 @@ struct RouteMapView: View {
                                   y: (geometry.size.height + geometry.safeAreaInsets.bottom - geometry.safeAreaInsets.top) / 2)
                 }
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("screen.map.fullscreen")
     }
 
     private func expandedMapContent(topInset: CGFloat) -> some View {
@@ -598,8 +600,6 @@ struct RouteMapView: View {
             .padding(.top, 12)
             .padding(.bottom, 8)
         }
-        .accessibilityElement(children: .contain)
-        .accessibilityIdentifier("screen.map.fullscreen")
         .onAppear {
 #if DEBUG
             if ScreenshotState.requested == .mapReferenceRouteFullscreenMenu {

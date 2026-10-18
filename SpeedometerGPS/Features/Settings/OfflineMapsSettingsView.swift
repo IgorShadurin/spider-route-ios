@@ -4,6 +4,8 @@ import SwiftUI
 
 struct OfflineMapsSettingsView: View {
     @ObservedObject var settings: AppSettings
+    @ObservedObject var subscription: SubscriptionStore
+    @Environment(\.dismiss) private var dismiss
     @ObservedObject private var store = OfflineMapStore.shared
     private enum MapSheet: Identifiable {
         case download, customDownload, preview(DownloadedMapMetadata)
@@ -18,6 +20,17 @@ struct OfflineMapsSettingsView: View {
     @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
+        Group {
+            if subscription.isEntitled {
+                unlockedContent
+            } else {
+                PaywallView(subscription: subscription, onClose: { dismiss() },
+                            previewState: ScreenshotState.requested == nil ? nil : .normal)
+            }
+        }
+    }
+
+    private var unlockedContent: some View {
         List {
             Section {
                 overview

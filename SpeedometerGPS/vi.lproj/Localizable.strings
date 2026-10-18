@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Mỗi chuyến đi đều đáng giá";
-"paywall_subtitle" = "Ghi lại hành trình";
+"paywall_subtitle" = "Ghi lại hành trình · Bản đồ đã tải";
 "paywall_benefit_routes" = "Ghi lại các chuyến đi và lưu lộ trình của bạn";
-"settings_access_free" = "Chỉ tính năng ghi lại hành trình cần Plus. Các tính năng khác đều miễn phí.";
+"settings_access_free" = "SpiderRoute Plus: Ghi lại hành trình · Bản đồ đã tải";
 "settings_access_plus" = "SpiderRoute Plus đang hoạt động trên Apple ID này.";
 "settings_clear_history" = "Xóa toàn bộ lịch sử chuyến đi";
 "settings_icloud_sync" = "Đồng bộ chuyến đi với iCloud";

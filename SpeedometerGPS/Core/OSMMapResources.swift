@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 import MapKit
 import MapLibre
 
@@ -163,6 +164,20 @@ final class OfflineMapStore: ObservableObject {
     }
     @Published private(set) var entries: [Entry] = []
     @Published var selectedID: UUID? { didSet { UserDefaults.standard.set(selectedID?.uuidString, forKey: "selected_offline_map") } }
+    @Published private(set) var canUseOfflineMaps = false
+    private var entitlementObservation: AnyCancellable?
+
+    /// Trial, subscription and lifetime all use the same verified StoreKit entitlement.
+    func observeAccess(_ subscription: SubscriptionStore) {
+        entitlementObservation = subscription.$isEntitled.removeDuplicates().sink { [weak self] entitled in
+            guard let self else { return }
+            self.canUseOfflineMaps = entitled
+            if !entitled {
+                for pack in self.packs.values where pack.state == .active { pack.suspend() }
+            }
+        }
+    }
+
     @Published var failed = false
     @Published private(set) var isCreating = false
     var lastRegion = MKCoordinateRegion(center: .init(latitude: 53.9, longitude: 27.5667), span: .init(latitudeDelta: 0.03, longitudeDelta: 0.04))
@@ -175,12 +190,13 @@ final class OfflineMapStore: ObservableObject {
     private(set) var debugLastError: String?
 #endif
     private var observers: [NSObjectProtocol] = []
-    var selectedLanguageID: String? { entries.first { $0.id == selectedID && $0.state == .complete }?.metadata.languageID }
+    var selectedLanguageID: String? { guard canUseOfflineMaps else { return nil }; return entries.first { $0.id == selectedID && $0.state == .complete }?.metadata.languageID }
 
-    var selectedStyleURL: URL? { entries.first { $0.id == selectedID && $0.state == .complete }?.metadata.frozenStyleURL }
+    var selectedStyleURL: URL? { guard canUseOfflineMaps else { return nil }; return entries.first { $0.id == selectedID && $0.state == .complete }?.metadata.frozenStyleURL }
 
-    init() {
+    init(observeStorage: Bool = true) {
         selectedID = UserDefaults.standard.string(forKey: "selected_offline_map").flatMap(UUID.init(uuidString:))
+        guard observeStorage else { return }
         let config = URLSessionConfiguration.default
         config.httpAdditionalHeaders = ["User-Agent": "SpiderRoute/1.5 (+https://spiderroute.com)"]
         config.httpMaximumConnectionsPerHost = 4
@@ -227,6 +243,9 @@ final class OfflineMapStore: ObservableObject {
         }
         let newlyLoaded = Set(next.keys).subtracting(packs.keys)
         packs = next
+        if !canUseOfflineMaps {
+            for pack in packs.values where pack.state == .active { pack.suspend() }
+        }
 #if DEBUG
         if !cleanedQA, MLNOfflineStorage.shared.packs != nil {
             cleanedQA = true
@@ -248,15 +267,18 @@ final class OfflineMapStore: ObservableObject {
     }
 
     func download(name: String, languageID: String, bounds: MLNCoordinateBounds, region: OfflineRegion? = nil, shape: MLNShape? = nil, completion: @escaping (Bool) -> Void) {
+        guard canUseOfflineMaps else { completion(false); return }
         guard !isCreating, !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
               (region != nil ? shape != nil : OSMMapStyle.estimatedTileCount(bounds) <= 2_500) else { failed = true; completion(false); return }
         isCreating = true
         Task { @MainActor in
             var pendingStyleURL: URL?
             do {
+                guard canUseOfflineMaps else { throw CancellationError() }
                 let metadata = DownloadedMapMetadata(name: String(name.trimmingCharacters(in: .whitespacesAndNewlines).prefix(100)), languageID: languageID, bounds: region?.coordinateBounds ?? bounds, regionID: region?.id, styleVersion: 1)
                 let styleURL = try await OSMMapStyle.prepareDownloadStyle(metadata)
                 pendingStyleURL = styleURL
+                guard canUseOfflineMaps else { throw CancellationError() }
                 let offlineRegion: MLNOfflineRegion
                 if region != nil, let shape {
                     // Named administrative regions use the full polygon, including islands.
@@ -268,7 +290,9 @@ final class OfflineMapStore: ObservableObject {
                 let context = try JSONEncoder().encode(metadata)
                 let pack = try await MLNOfflineStorage.shared.addPack(for: offlineRegion, withContext: context)
                 isCreating = false
-                reload(); selectedID = metadata.id; pack.resume(); completion(true)
+                reload()
+                guard canUseOfflineMaps else { pack.suspend(); completion(false); return }
+                selectedID = metadata.id; pack.resume(); completion(true)
             } catch {
 #if DEBUG
                 debugLastError = String(reflecting: error) + " " + String(describing: (error as NSError).userInfo)
@@ -280,7 +304,7 @@ final class OfflineMapStore: ObservableObject {
     }
     func toggle(_ id: UUID) {
         guard let pack = packs[id] else { return }
-        if pack.state == .active { pack.suspend() } else if pack.state != .complete { pack.resume() }
+        if pack.state == .active { pack.suspend() } else if canUseOfflineMaps, pack.state != .complete { pack.resume() }
         reload()
     }
     func delete(_ id: UUID) {

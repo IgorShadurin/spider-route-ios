@@ -69,7 +69,9 @@ struct SpeedometerGPSApp: App {
 #endif
         _referenceRoute = StateObject(wrappedValue: ReferenceRouteStore(loadInBackground: true))
         _incomingReferenceRoute = StateObject(wrappedValue: IncomingReferenceRouteCoordinator())
-        _subscription = StateObject(wrappedValue: SubscriptionStore())
+        let subscription = SubscriptionStore()
+        _subscription = StateObject(wrappedValue: subscription)
+        OfflineMapStore.shared.observeAccess(subscription)
         _remoteCamera = StateObject(wrappedValue: RemoteCameraController())
     }
 

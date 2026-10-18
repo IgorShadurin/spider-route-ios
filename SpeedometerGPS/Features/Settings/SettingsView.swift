@@ -162,7 +162,7 @@ struct SettingsView: View {
 
     private var settingsNavigationLinks: some View {
         Group {
-            NavigationLink(destination: OfflineMapsSettingsView(settings: settings), isActive: $showingOfflineMaps, label: EmptyView.init)
+            NavigationLink(destination: OfflineMapsSettingsView(settings: settings, subscription: subscription), isActive: $showingOfflineMaps, label: EmptyView.init)
             NavigationLink(destination: MapProviderSettingsView(settings: settings),
                            isActive: $showingMapProvider, label: EmptyView.init)
             NavigationLink(
@@ -215,9 +215,15 @@ struct SettingsView: View {
 
     private var offlineMapsSection: some View {
         Section {
-            Button { showingOfflineMaps = true } label: {
-                SettingsNavigationRow(title: L10n.tr("offline_manage"), systemName: "arrow.down.circle", detail: "")
-            }.buttonStyle(.plain).accessibilityIdentifier("settings.offline-maps")
+            Button {
+                if subscription.isEntitled { showingOfflineMaps = true } else { onUpgrade() }
+            } label: {
+                SettingsNavigationRow(title: L10n.tr("offline_manage"), systemName: "arrow.down.circle",
+                                      detail: "", requiresPlus: !subscription.isEntitled)
+            }
+            .buttonStyle(.plain)
+            .accessibilityValue(subscription.isEntitled ? "" : L10n.tr("paywall_product_title"))
+            .accessibilityIdentifier("settings.offline-maps")
         } header: { Text(L10n.tr("offline_maps")) }
     }
 
@@ -552,6 +558,7 @@ private struct SettingsNavigationRow: View {
     let title: String
     let systemName: String
     var detail: String? = nil
+    var requiresPlus = false
 
     var body: some View {
         HStack(spacing: 12) {
@@ -567,6 +574,12 @@ private struct SettingsNavigationRow: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.78)
                     .monospacedDigit()
+            }
+            if requiresPlus {
+                Image(systemName: "crown.fill")
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundStyle(Color(red: 0.78, green: 0.53, blue: 0.08))
+                    .accessibilityHidden(true)
             }
             Image(systemName: PlatformSymbol.name("chevron.forward"))
                 .font(.caption)

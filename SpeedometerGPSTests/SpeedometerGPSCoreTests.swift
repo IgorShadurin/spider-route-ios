@@ -8,6 +8,79 @@ import XCTest
 @testable import SpeedometerGPS
 
 final class SpeedometerGPSCoreTests: XCTestCase {
+
+    @MainActor
+    func testOfflineMapsRejectFreeDownloadsIncludingNamedRegions() throws {
+        let suite = "OfflineAccess.\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: suite)!
+        defer { defaults.removePersistentDomain(forName: suite) }
+        let subscription = SubscriptionStore(observeTransactions: false, debugDefaults: defaults)
+        let maps = OfflineMapStore(observeStorage: false)
+        maps.observeAccess(subscription)
+        let region = try XCTUnwrap(OfflineRegionCatalog.load().first { $0.id == "country.MCO" })
+        let shape = try MLNShape(data: region.shapeData(), encoding: String.Encoding.utf8.rawValue)
+        for named in [false, true] {
+            var result: Bool?
+            maps.download(name: "Denied", languageID: "en", bounds: region.coordinateBounds,
+                          region: named ? region : nil, shape: named ? shape : nil) { result = $0 }
+            XCTAssertEqual(result, false, "Free access must fail before any asynchronous network work")
+            XCTAssertFalse(maps.isCreating)
+            XCTAssertTrue(maps.entries.isEmpty)
+        }
+        XCTAssertNil(maps.selectedStyleURL)
+        XCTAssertNil(maps.selectedLanguageID)
+    }
+
+    @MainActor
+    func testOfflineMapsRespondImmediatelyToAccessChanges() {
+        let suite = "OfflineAccessChanges.\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: suite)!
+        defer { defaults.removePersistentDomain(forName: suite) }
+        let subscription = SubscriptionStore(observeTransactions: false, debugDefaults: defaults)
+        let maps = OfflineMapStore(observeStorage: false)
+        maps.observeAccess(subscription)
+        XCTAssertFalse(maps.canUseOfflineMaps)
+        subscription.toggleDebugAccessMode()
+        XCTAssertTrue(maps.canUseOfflineMaps)
+        subscription.resetDebugFreeMode()
+        XCTAssertFalse(maps.canUseOfflineMaps)
+        var result: Bool?
+        maps.download(name: "After expiry", languageID: "en", bounds: MLNCoordinateBounds(
+            sw: .init(latitude: 53.9, longitude: 27.56),
+            ne: .init(latitude: 53.901, longitude: 27.561))) { result = $0 }
+        XCTAssertEqual(result, false)
+        XCTAssertFalse(maps.isCreating)
+    }
+
+    @MainActor
+    func testOfflineMapsFollowVerifiedSubscriptionAndLifetimeAccess() async throws {
+        let url = try XCTUnwrap(Bundle(for: Self.self).url(forResource: "Configuration", withExtension: "storekit"))
+        let session = try SKTestSession(contentsOf: url)
+        session.disableDialogs = true
+        session.clearTransactions()
+        defer { session.clearTransactions() }
+        let suite = "OfflineStoreKit.\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: suite)!
+        defer { defaults.removePersistentDomain(forName: suite) }
+        let maps = OfflineMapStore(observeStorage: false)
+        for plan in AccessPlan.allCases {
+            let subscription = SubscriptionStore(observeTransactions: false, debugDefaults: defaults)
+            maps.observeAccess(subscription)
+            XCTAssertFalse(maps.canUseOfflineMaps)
+            // Create only a local StoreKit test transaction; never fall through
+            // to an App Store account prompt if the test service is unavailable.
+            if #available(iOS 17.0, *) {
+                _ = try await session.buyProduct(identifier: plan.productID)
+            } else {
+                try session.buyProduct(productIdentifier: plan.productID)
+            }
+            await subscription.refreshEntitlement()
+            XCTAssertTrue(maps.canUseOfflineMaps, "Verified trial/subscription/lifetime grants map access")
+            session.clearTransactions()
+            await subscription.refreshEntitlement()
+            XCTAssertFalse(maps.canUseOfflineMaps, "Removing the entitlement must revoke offline access")
+        }
+    }
     func testOfflineTileTemplateValidationRetainsXYZAndRejectsInvalidEndpoints() throws {
         let template = "https://tiles.openfreemap.org/planet/20260927_080001_pt/{z}/{x}/{y}.pbf"
         XCTAssertTrue(OSMMapStyle.isHTTPSMapTileTemplate(template))

@@ -2,6 +2,42 @@ import XCTest
 
 final class SpeedometerGPSUITests: XCTestCase {
 
+    func testOfflineMapsFreeMenuOpensPaywallAndPaidMenuOpensDownloads() {
+        let app = XCUIApplication()
+        for paid in [false, true] {
+            app.launchArguments = ["--ui-screen=settings.main", "--ui-locale=en-US", "--ui-scheme=light"]
+                + (paid ? ["--ui-debug-paid"] : [])
+            app.launch()
+            let row = app.buttons["settings.offline-maps"]
+            XCTAssertTrue(row.waitForExistence(timeout: 10))
+            XCTAssertEqual(row.value as? String ?? "", paid ? "" : "SpiderRoute Plus")
+            captureSettings(app, paid ? "offline-paid-settings" : "offline-free-settings-crown")
+            row.tap()
+            if paid {
+                XCTAssertTrue(app.buttons["offline.add"].waitForExistence(timeout: 10))
+                app.buttons["offline.add"].tap()
+                XCTAssertTrue(app.descendants(matching: .any)["screen.offline-regions"].waitForExistence(timeout: 10))
+            } else {
+                XCTAssertTrue(app.buttons["paywall.subscribe"].waitForExistence(timeout: 10))
+                XCTAssertFalse(app.buttons["offline.add"].exists)
+            }
+            captureSettings(app, paid ? "offline-paid-regions" : "offline-free-paywall")
+            app.terminate()
+        }
+    }
+
+    func testOfflineMapsFreeDirectEntryCannotReachDownloadControls() {
+        let app = XCUIApplication()
+        for screen in ["settings.offline-maps", "map.download", "map.regions"] {
+            app.launchArguments = ["--ui-screen=\(screen)", "--ui-locale=en-US"]
+            app.launch()
+            XCTAssertTrue(app.buttons["paywall.subscribe"].waitForExistence(timeout: 10))
+            XCTAssertFalse(app.buttons["offline.download"].exists)
+            XCTAssertFalse(app.buttons["offline.add"].exists)
+            app.terminate()
+        }
+    }
+
     func testSettingsAboutVisualMatrix() {
         let app = XCUIApplication()
         for locale in ["en-US", "es-ES", "ar"] {
@@ -19,7 +55,7 @@ final class SpeedometerGPSUITests: XCTestCase {
 
     func testDownloadSettingsVisualMatrix() {
         let app = XCUIApplication()
-        app.launchArguments = ["--ui-screen=map.download", "--ui-locale=en-US", "--ui-scheme=light",
+        app.launchArguments = ["--ui-screen=map.download", "--ui-debug-paid", "--ui-locale=en-US", "--ui-scheme=light",
             "--ui-download-catalog-region=country.BLR", "--ui-live-map-tiles"]
         app.launch()
         XCTAssertTrue(app.textFields["offline.name"].waitForExistence(timeout: 15))
@@ -30,7 +66,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         for locale in ["en-US", "es-ES", "ar", "de", "ja"] {
             for scheme in ["light", "dark"] {
                 app.terminate()
-                app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-locale=\(locale)", "--ui-scheme=\(scheme)"]
+                app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-debug-paid", "--ui-locale=\(locale)", "--ui-scheme=\(scheme)"]
                 app.launch()
                 let mapRow = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'offline.map.' AND label CONTAINS 'QA Layout'")).firstMatch
                 XCTAssertTrue(mapRow.waitForExistence(timeout: 10))
@@ -45,7 +81,7 @@ final class SpeedometerGPSUITests: XCTestCase {
             }
         }
         app.terminate()
-        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-locale=en-US"]
+        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-debug-paid", "--ui-locale=en-US"]
         app.launch()
         let savedRow = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'offline.map.' AND label CONTAINS 'QA Layout'")).firstMatch
         XCTAssertTrue(savedRow.waitForExistence(timeout: 10))
@@ -64,7 +100,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         XCTAssertTrue(app.descendants(matching: .any)["offline.empty"].firstMatch.waitForExistence(timeout: 5))
         captureSettings(app, "download-manager-empty")
         app.terminate()
-        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-locale=en-US", "--ui-scheme=light",
+        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-debug-paid", "--ui-locale=en-US", "--ui-scheme=light",
             "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
         app.launch()
         XCTAssertTrue(app.buttons["offline.add"].waitForExistence(timeout: 10))
@@ -76,7 +112,7 @@ final class SpeedometerGPSUITests: XCTestCase {
 
     func testDownloadControlsPauseResumeAndConfirmStopInline() {
         let app = XCUIApplication()
-        app.launchArguments = ["--ui-screen=map.download", "--ui-locale=en-US", "--ui-scheme=light",
+        app.launchArguments = ["--ui-screen=map.download", "--ui-debug-paid", "--ui-locale=en-US", "--ui-scheme=light",
             "--ui-download-catalog-region=country.BLR", "--ui-live-map-tiles"]
         app.launch()
         let field = app.textFields["offline.name"]
@@ -122,7 +158,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         stop.tap(); app.buttons["destructive.confirmation.confirm"].tap()
         XCTAssertFalse(row.exists)
         app.terminate()
-        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-locale=en-US"]
+        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-debug-paid", "--ui-locale=en-US"]
         app.launch()
         XCTAssertTrue(app.buttons["offline.add"].waitForExistence(timeout: 10))
         XCTAssertFalse(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'offline.map.' AND label CONTAINS 'QA Controls'")).firstMatch.exists)
@@ -242,7 +278,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         func launchOffline() {
             app.terminate()
             clearAmbientMapCache(app)
-            app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe"]
+            app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-debug-paid", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe"]
             app.launch()
         }
         func verifyOffline(_ name: String) {
@@ -253,7 +289,7 @@ final class SpeedometerGPSUITests: XCTestCase {
             let capture = XCTAttachment(screenshot: app.screenshot()); capture.name = name + "-pack-only-offline"; capture.lifetime = .keepAlways; add(capture)
             app.buttons["Done"].firstMatch.tap()
         }
-        app.launchArguments = ["--ui-screen=settings.main", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-clean-offline-qa"]
+        app.launchArguments = ["--ui-screen=settings.main", "--ui-debug-paid", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-clean-offline-qa"]
         app.launch()
         let manager = app.buttons["settings.offline-maps"]
         XCTAssertTrue(manager.waitForExistence(timeout: 10))
@@ -267,7 +303,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         launchOffline()
         verifyOffline("QA Monaco Country")
         app.terminate()
-        app.launchArguments = ["--ui-screen=map.route", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe", "--ui-selected-offline-bounds"]
+        app.launchArguments = ["--ui-screen=map.route", "--ui-debug-paid", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe", "--ui-selected-offline-bounds"]
         app.launch()
         let mainLabels = app.descendants(matching: .any)["map.rendered-labels"].firstMatch
         let mainRendered = NSPredicate { _, _ in mainLabels.exists && (mainLabels.value as? String ?? "").contains("Monaco") }
@@ -290,7 +326,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         app.terminate(); clearAmbientMapCache(app)
         // Negative control: without the removed pack or ambient cache, the same
         // Monaco preview cannot obtain named map features with networking blocked.
-        app.launchArguments = ["--ui-screen=map.download", "--ui-locale=en-US", "--ui-download-catalog-region=country.MCO", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe"]
+        app.launchArguments = ["--ui-screen=map.download", "--ui-debug-paid", "--ui-locale=en-US", "--ui-download-catalog-region=country.MCO", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe"]
         app.launch()
         let labels = app.descendants(matching: .any)["map.rendered-labels"].firstMatch
         XCTAssertTrue(labels.waitForExistence(timeout: 10))
@@ -312,7 +348,7 @@ final class SpeedometerGPSUITests: XCTestCase {
 
     func testEnglishAppDownloadsRussianMapAndRendersItWithNetworkBlocked() {
         let app = XCUIApplication()
-        app.launchArguments = ["--ui-screen=map.download", "--ui-locale=en-US", "--ui-map-provider=openStreetMap", "--ui-live-map-tiles", "--ui-download-small-area", "--ui-clean-offline-qa"]
+        app.launchArguments = ["--ui-screen=map.download", "--ui-debug-paid", "--ui-locale=en-US", "--ui-map-provider=openStreetMap", "--ui-live-map-tiles", "--ui-download-small-area", "--ui-clean-offline-qa"]
         app.launch()
         let language = app.buttons["offline.language"]
         XCTAssertTrue(language.waitForExistence(timeout: 10))
@@ -337,7 +373,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: complete, object: nil)], timeout: 90), .completed)
         app.terminate()
         clearAmbientMapCache(app)
-        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe"]
+        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-debug-paid", "--ui-locale=en-US", "--ui-live-map-tiles", "--ui-offline-map", "--ui-map-label-probe"]
         app.launch()
         let map = app.buttons.matching(NSPredicate(format: "identifier == %@ AND label CONTAINS %@", "offline.map.ru", "QA Minsk Russian")).firstMatch
         XCTAssertTrue(map.waitForExistence(timeout: 10)); map.tap()
@@ -354,7 +390,7 @@ final class SpeedometerGPSUITests: XCTestCase {
         app.buttons["destructive.confirmation.cancel"].tap()
         XCTAssertTrue(app.buttons.matching(NSPredicate(format: "identifier == %@ AND label CONTAINS %@", "offline.map.ru", "QA Minsk Russian")).firstMatch.exists)
         app.terminate()
-        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-locale=ar", "--ui-live-map-tiles", "--ui-offline-map"]
+        app.launchArguments = ["--ui-screen=settings.offline-maps", "--ui-debug-paid", "--ui-locale=ar", "--ui-live-map-tiles", "--ui-offline-map"]
         app.launch()
         let arabicMap = app.buttons.matching(NSPredicate(format: "identifier == %@ AND label CONTAINS %@", "offline.map.ru", "QA Minsk Russian")).firstMatch
         XCTAssertTrue(arabicMap.waitForExistence(timeout: 10))

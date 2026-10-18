@@ -330,9 +330,9 @@
 "paywall_product_title" = "SpiderRoute Plus";
 "paywall_service_title" = "SpiderRoute Plus";
 "paywall_title" = "Κάντε κάθε βόλτα να μετράει";
-"paywall_subtitle" = "Καταγραφή διαδρομών";
+"paywall_subtitle" = "Καταγραφή διαδρομών · Χάρτες εκτός σύνδεσης";
 "paywall_benefit_routes" = "Καταγράψτε βόλτες και κρατήστε τις διαδρομές σας";
-"settings_access_free" = "Μόνο η καταγραφή διαδρομών απαιτεί Plus. Οι άλλες λειτουργίες είναι δωρεάν.";
+"settings_access_free" = "SpiderRoute Plus: Καταγραφή διαδρομών · Χάρτες εκτός σύνδεσης";
 "settings_access_plus" = "Το SpiderRoute Plus είναι ενεργό σε αυτό το Apple ID.";
 "settings_clear_history" = "Εκκαθάριση όλου του ιστορικού βόλτων";
 "settings_icloud_sync" = "Συγχρονισμός βόλτων με το iCloud";

@@ -406,6 +406,21 @@ struct SettingsView: View {
         Section(L10n.tr("settings_legal")) {
             Link(destination: privacyURL) { Label(L10n.tr("paywall_privacy"), systemImage: PlatformSymbol.name("hand.raised")) }
             Link(destination: termsURL) { Label(L10n.tr("paywall_terms"), systemImage: PlatformSymbol.name("doc.text")) }
+            NavigationLink {
+                ScrollView {
+                    Text(verbatim: (Bundle.main.url(forResource: "MapLibreNotices", withExtension: "txt")
+                        .flatMap { try? String(contentsOf: $0, encoding: .utf8) }) ?? "")
+                        .font(.footnote)
+                        .textSelection(.enabled)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                }
+                .navigationTitle("OpenStreetMap / MapLibre")
+                .navigationBarTitleDisplayMode(.inline)
+            } label: {
+                Label { Text(verbatim: "OpenStreetMap / MapLibre") } icon: { Image(systemName: "doc.text") }
+            }
+            .accessibilityIdentifier("settings.map-licenses")
         }
     }
 

@@ -53,6 +53,6 @@ The build validates localization tables. To run that check directly:
 
 Recorded rides and imported routes are stored on the device, with optional iCloud route sync. Map requests contact the chosen map provider. Remote Camera uses local pairing. See the [privacy policy](https://spiderroute.com/ios/privacy).
 
-OpenStreetMap and OpenMapTiles attribution remains visible in the app. MapLibre notices are included in `SpeedometerGPS/MapLibreNotices.txt`. The bundled offline-region boundary catalog comes from public-domain Natural Earth data; its source, license link, and checksums are in `SpeedometerGPS/OfflineRegions/SOURCE.json`.
+OpenStreetMap and OpenMapTiles attribution remains visible in the app. MapLibre, OpenFreeMap/OSM Liberty, upstream Mapbox style, and Noto Sans notices are included in `SpeedometerGPS/MapLibreNotices.txt` and available in Settings → Legal → OpenStreetMap / MapLibre. The bundled offline-region boundary catalog comes from public-domain Natural Earth data; its source, license link, and checksums are in `SpeedometerGPS/OfflineRegions/SOURCE.json`.
 
 This repository publishes a clean snapshot of the app. It excludes the previous development history, personal route files, device reports, generated marketing assets, test recordings, local deployment scripts, build products, credentials, and signing material. The approximately 40 MB region geometry file is a runtime resource used by the offline map picker, not a test dataset.
